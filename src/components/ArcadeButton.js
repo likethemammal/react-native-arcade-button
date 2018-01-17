@@ -185,10 +185,10 @@ const disabledStyles = StyleSheet.create({
 
 const styles = StyleSheet.create({
     container: {
-        position: 'relative',
         alignItems: 'center',
-        marginBottom: 30,
-        marginTop: 30,
+        position: 'relative',
+        top: 3,
+        width: 220,
     },
     top: {
         position: 'relative',
