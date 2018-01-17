@@ -7,6 +7,7 @@ module.exports = merge(common, {
     devServer: {
         contentBase: './bin',
     },
+    watch: true,
 
     module: {
         rules: [

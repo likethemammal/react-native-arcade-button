@@ -13,7 +13,6 @@ const config = {
 
     context: path.resolve(__dirname, './src'),
 
-    watch: true,
     entry: {
         lib: './index.js',
         example: './example.js'
