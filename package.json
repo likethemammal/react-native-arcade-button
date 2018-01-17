@@ -16,6 +16,7 @@
     "react"
   ],
   "scripts": {
+    "prepublishOnly": "npm run build",
     "test": "jest -u",
     "cover": "jest --coverage -u",
     "build": "webpack --config webpack.prod.js",

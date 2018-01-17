@@ -7,75 +7,21 @@ import {
     Touchable,
 } from '@likethemammal/react-primitives'
 
-import _ from 'underscore'
-
-import onecolor from 'onecolor'
-
 import colors from '../constants/colors'
 
-const reflectionColor = colors.malachite
-const flatColor = colors.jade
-const shadowColor = colors.green_haze
-const shadowColorDark = colors.green_haze_dark
+const reflectionColor = 'rgba(255,255,255,0.35)'
+const shadowColor = 'rgba(0,0,0,0.1)'
+const shadowColorDark = 'rgba(0,0,0,0.15)'
 const bottomShadowColor = colors.silver
 
-function hslToString({ _hue, _saturation, _lightness}) {
-
-    return `hsl(${_hue*360}, ${_saturation*100}%, ${_lightness*100}%)`
-}
-
-const originalColors = {
-    flatColor,
-    reflectionColor,
-    shadowColor,
-    shadowColorDark,
-}
-
-const originalColorsHSLs = _.mapObject(
-    originalColors,
-    (val, key) => onecolor(val).hsl()
-)
-const newColor = colors.jade
-
-const newColorHSL = onecolor(newColor).hsl()
-
-const differenceColorsHSLs = _.mapObject(
-    originalColorsHSLs,
-    ({
-        _hue,
-        _saturation,
-        _lightness,
-    }, key) => {
-        return {
-            _hue: originalColorsHSLs.flatColor._hue - _hue,
-            _saturation: originalColorsHSLs.flatColor._saturation - _saturation,
-            _lightness: originalColorsHSLs.flatColor._lightness - _lightness,
-        }
-    }
-)
-
-const newColorsHSLs = _.mapObject(
-    differenceColorsHSLs,
-    ({
-        _hue,
-        _saturation,
-        _lightness,
-    }, key) => {
-        return {
-            _hue: newColorHSL._hue - _hue,
-            _saturation: newColorHSL._saturation - _saturation,
-            _lightness: newColorHSL._lightness - _lightness,
-        }
-    }
-)
-
-const newColors = _.mapObject(
-    newColorsHSLs,
-    hslToString
-)
-
-
 export default class ArcadeButton extends Component {
+
+    static defaultProps = {
+        color: 'hsla(120, 52%, 48%, 1)',
+        disabled: false,
+        text: 'Start'
+    }
+
     state = {
         down: false,
         amountDown: new Animated.Value(0),
@@ -123,7 +69,7 @@ export default class ArcadeButton extends Component {
         })
 
         if (disabled) {
-            onDisabled()
+            if (onDisabled) onDisabled()
             return
         }
 
@@ -146,54 +92,44 @@ export default class ArcadeButton extends Component {
     }
 
     render() {
+
+        const { amountDown } = this.state
+        const { color, text } = this.props
+
         const topDepressed = {
             transform: [{
-                translateY: this.state.amountDown.interpolate({
+                translateY: amountDown.interpolate({
                     inputRange: [0, 1],
                     outputRange: [0, 2]
                 })
             }],
             zIndex: 1,
-            opacity: this.state.amountDown.interpolate({
+            opacity: amountDown.interpolate({
                 inputRange: [0, 1],
                 outputRange: [1, 0.8]
             })
         }
 
-        const disabled = this.props.disabled && {
-                topFlat: {
-                    backgroundColor: colors.silver_dark,
-                    borderColor: colors.silver_dark,
-                },
-                topReflection: {
-                    backgroundColor: colors.silver,
-                },
-                bottomFlat: {
-                    borderColor: colors.silver,
-                    backgroundColor: colors.silver_dark,
-                },
-                topShadow: {
-                    borderColor: colors.gray,
-                    backgroundColor: colors.dusty_gray,
-                },
-                bottomShadow: {
-                    backgroundColor: colors.dusty_gray,
-                },
-                bottomShadowUnder: {
-                    backgroundColor: bottomShadowColor,
-                },
-                text: {
-                    textShadowColor: 'rgba(0,0,0,0.0)',
-                    opacity: 0.5,
-                }
-            }
+        const disabled = this.props.disabled && disabledStyles
+
+        const topFlat = {
+            backgroundColor: color,
+            borderColor: color,
+        }
+        const bottomFlat = {
+            backgroundColor: color,
+        }
+        const bottomRim = {
+            backgroundColor: color,
+        }
 
         return (
             <View style={styles.container}>
                 <View style={styles.bottom}>
                     <View style={[styles.bottomShadowUnder, disabled && disabled.bottomShadowUnder]} />
+                    <View style={[styles.bottomRim, bottomRim, disabled && disabled.bottomFlat]} />
                     <View style={[styles.bottomShadow, disabled && disabled.bottomShadow]} />
-                    <View style={[styles.bottomFlat, disabled && disabled.bottomFlat]} />
+                    <View style={[styles.bottomFlat, bottomFlat, disabled && disabled.bottomFlat]} />
                 </View>
 
                 <View style={styles.top}>
@@ -205,8 +141,10 @@ export default class ArcadeButton extends Component {
                         <View style={[styles.topReflection, disabled && disabled.topReflection]} />
 
                         <Touchable onPressIn={this.onDown} onPressOut={this.onUp}>
-                            <View style={[styles.topFlat, disabled && disabled.topFlat]}>
-                                <Text style={[styles.text, disabled && disabled.text]}>Start</Text>
+                            <View style={[styles.topFlat, topFlat, disabled && disabled.topFlat]}>
+                                <Text style={[styles.text, disabled && disabled.text]}>
+                                    {text}
+                                </Text>
                             </View>
                         </Touchable>
 
@@ -218,6 +156,34 @@ export default class ArcadeButton extends Component {
         );
     }
 }
+
+const disabledStyles = StyleSheet.create({
+    topFlat: {
+        backgroundColor: colors.silver_dark,
+        borderColor: colors.silver_dark,
+    },
+    topReflection: {
+        backgroundColor: colors.silver,
+    },
+    bottomFlat: {
+        borderColor: colors.silver,
+        backgroundColor: colors.silver_dark,
+    },
+    topShadow: {
+        borderColor: colors.gray,
+        backgroundColor: colors.dusty_gray,
+    },
+    bottomShadow: {
+        backgroundColor: colors.dusty_gray,
+    },
+    bottomShadowUnder: {
+        backgroundColor: bottomShadowColor,
+    },
+    text: {
+        textShadowColor: 'rgba(0,0,0,0.0)',
+        opacity: 0.5,
+    }
+})
 
 const styles = StyleSheet.create({
     container: {
@@ -237,21 +203,20 @@ const styles = StyleSheet.create({
         height: 150,
         marginTop: 3,
         borderRadius: 75,
-        backgroundColor: newColors.flatColor,
         borderWidth: 1,
         borderStyle: 'solid',
-        borderColor: newColors.flatColor,
     },
     text: {
         color: 'white',
         fontWeight: 'bold',
-        fontSize: 30,
+        fontSize: 32,
         textShadowOffset: {
             width: 0,
             height: 1
         },
         textShadowColor: 'rgba(0,0,0,0.2)',
         textShadowRadius: 5,
+        textTransform: 'uppercase'
     },
     topShadow: {
         position: 'absolute',
@@ -259,10 +224,10 @@ const styles = StyleSheet.create({
         height: 150,
         marginTop: 7,
         borderRadius: 75,
-        borderColor: newColors.shadowColorDark,
+        borderColor: shadowColorDark,
         borderWidth: 1,
         borderStyle: 'solid',
-        backgroundColor: newColors.shadowColor,
+        backgroundColor: shadowColor,
     },
     topReflection: {
         position: 'absolute',
@@ -270,7 +235,7 @@ const styles = StyleSheet.create({
         height: 150,
         marginTop: 1,
         borderRadius: 75,
-        backgroundColor: newColors.reflectionColor,
+        backgroundColor: reflectionColor,
     },
     topDepressed: {
     },
@@ -285,8 +250,14 @@ const styles = StyleSheet.create({
         borderRadius: 100,
         borderWidth: 1,
         borderStyle: 'solid',
-        borderColor: newColors.reflectionColor,
-        backgroundColor: newColors.flatColor,
+        borderColor: reflectionColor,
+    },
+    bottomRim: {
+        position: 'absolute',
+        top: 8,
+        width: 200,
+        height: 200,
+        borderRadius: 100,
     },
     bottomShadow: {
         position: 'absolute',
@@ -294,7 +265,7 @@ const styles = StyleSheet.create({
         width: 200,
         height: 200,
         borderRadius: 100,
-        backgroundColor: newColors.shadowColor,
+        backgroundColor: shadowColor,
     },
     bottomShadowUnder: {
         position: 'absolute',
@@ -304,6 +275,6 @@ const styles = StyleSheet.create({
         height: 220,
         borderRadius: 110,
         backgroundColor: bottomShadowColor,
-        opacity: 0.15,
+        opacity: 0.1,
     }
 })
