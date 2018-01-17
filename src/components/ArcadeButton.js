@@ -7,6 +7,10 @@ import {
     Touchable,
 } from '@likethemammal/react-primitives'
 
+import _ from 'underscore'
+
+import onecolor from 'onecolor'
+
 import colors from '../constants/colors'
 
 const reflectionColor = colors.malachite
@@ -14,6 +18,62 @@ const flatColor = colors.jade
 const shadowColor = colors.green_haze
 const shadowColorDark = colors.green_haze_dark
 const bottomShadowColor = colors.silver
+
+function hslToString({ _hue, _saturation, _lightness}) {
+
+    return `hsl(${_hue*360}, ${_saturation*100}%, ${_lightness*100}%)`
+}
+
+const originalColors = {
+    flatColor,
+    reflectionColor,
+    shadowColor,
+    shadowColorDark,
+}
+
+const originalColorsHSLs = _.mapObject(
+    originalColors,
+    (val, key) => onecolor(val).hsl()
+)
+const newColor = colors.jade
+
+const newColorHSL = onecolor(newColor).hsl()
+
+const differenceColorsHSLs = _.mapObject(
+    originalColorsHSLs,
+    ({
+        _hue,
+        _saturation,
+        _lightness,
+    }, key) => {
+        return {
+            _hue: originalColorsHSLs.flatColor._hue - _hue,
+            _saturation: originalColorsHSLs.flatColor._saturation - _saturation,
+            _lightness: originalColorsHSLs.flatColor._lightness - _lightness,
+        }
+    }
+)
+
+const newColorsHSLs = _.mapObject(
+    differenceColorsHSLs,
+    ({
+        _hue,
+        _saturation,
+        _lightness,
+    }, key) => {
+        return {
+            _hue: newColorHSL._hue - _hue,
+            _saturation: newColorHSL._saturation - _saturation,
+            _lightness: newColorHSL._lightness - _lightness,
+        }
+    }
+)
+
+const newColors = _.mapObject(
+    newColorsHSLs,
+    hslToString
+)
+
 
 export default class ArcadeButton extends Component {
     state = {
@@ -177,10 +237,10 @@ const styles = StyleSheet.create({
         height: 150,
         marginTop: 3,
         borderRadius: 75,
-        backgroundColor: flatColor,
+        backgroundColor: newColors.flatColor,
         borderWidth: 1,
         borderStyle: 'solid',
-        borderColor: flatColor,
+        borderColor: newColors.flatColor,
     },
     text: {
         color: 'white',
@@ -199,10 +259,10 @@ const styles = StyleSheet.create({
         height: 150,
         marginTop: 7,
         borderRadius: 75,
-        borderColor: shadowColorDark,
+        borderColor: newColors.shadowColorDark,
         borderWidth: 1,
         borderStyle: 'solid',
-        backgroundColor: shadowColor,
+        backgroundColor: newColors.shadowColor,
     },
     topReflection: {
         position: 'absolute',
@@ -210,7 +270,7 @@ const styles = StyleSheet.create({
         height: 150,
         marginTop: 1,
         borderRadius: 75,
-        backgroundColor: reflectionColor,
+        backgroundColor: newColors.reflectionColor,
     },
     topDepressed: {
     },
@@ -225,8 +285,8 @@ const styles = StyleSheet.create({
         borderRadius: 100,
         borderWidth: 1,
         borderStyle: 'solid',
-        borderColor: reflectionColor,
-        backgroundColor: flatColor,
+        borderColor: newColors.reflectionColor,
+        backgroundColor: newColors.flatColor,
     },
     bottomShadow: {
         position: 'absolute',
@@ -234,7 +294,7 @@ const styles = StyleSheet.create({
         width: 200,
         height: 200,
         borderRadius: 100,
-        backgroundColor: shadowColor,
+        backgroundColor: newColors.shadowColor,
     },
     bottomShadowUnder: {
         position: 'absolute',
