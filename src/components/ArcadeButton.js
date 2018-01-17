@@ -18,8 +18,6 @@ export default class ArcadeButton extends Component {
 
     static defaultProps = {
         color: 'hsla(120, 52%, 48%, 1)',
-        disabled: false,
-        text: 'Start'
     }
 
     state = {
