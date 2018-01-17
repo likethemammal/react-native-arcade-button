@@ -1,27 +1,7 @@
-[![Build Status](https://travis-ci.org/likethemammal/open-source-react-component-example.svg?branch=master)](https://travis-ci.org/likethemammal/open-source-react-component-example)
-[![Coverage Status](https://coveralls.io/repos/github/likethemammal/open-source-react-component-example/badge.svg?branch=master)](https://coveralls.io/github/likethemammal/open-source-react-component-example?branch=master)
+[![Build Status](https://travis-ci.org/likethemammal/react-primitives-arcade-button.svg?branch=master)](https://travis-ci.org/likethemammal/open-source-react-component-example)
+[![Coverage Status](https://coveralls.io/repos/github/likethemammal/react-primitives-arcade-button/badge.svg?branch=master)](https://coveralls.io/github/likethemammal/open-source-react-component-example?branch=master)
 
-likethemammal/open-source-react-component-example
+likethemammal/react-primitives-arcade-button
 =========
 
-Easily copyable example of a react-redux-jest-webpack codebase, distributing a React component.
-
-## Installation
-
-Copy it and paste it
-
-## Development
-
-  `npm run dev`
-
-## Tests
-
-  `npm test`
-
-## Publishing
-
-  `npm run build` and then publish
-
-## Contributing
-
-Its an example
+No ready for use yet. Waiting on a react-primitives fix
