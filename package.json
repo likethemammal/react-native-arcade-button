@@ -1,6 +1,6 @@
 {
   "name": "react-primitives-arcade-button",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "description": "Arcade button component for React and React Native",
   "author": "Chris Dolphin",
   "license": "Apache-2.0",
