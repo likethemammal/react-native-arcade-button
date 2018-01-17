@@ -4,7 +4,7 @@ import {
     Text,
     View,
     Animated,
-    Touchable
+    Touchable,
 } from '@likethemammal/react-primitives'
 
 import colors from '../constants/colors'
@@ -25,17 +25,17 @@ export default class ArcadeButton extends Component {
 
     onDown = () => {
 
-        console.log('down')
-
         if (this.state.down) {
             return
         }
+
+        const { onDown, disabled } = this.props
 
         this.setState({
             down: true
         })
 
-        if (this.props.disabled) {
+        if (disabled) {
             return
         }
 
@@ -50,25 +50,29 @@ export default class ArcadeButton extends Component {
 
         this.animationTimer.start()
 
-        this.props.onDown()
+        if (onDown) {
+            onDown()
+        }
     }
 
     onUp = () => {
-        console.log('up')
+        const { onUp, disabled, onDisabled, } = this.props
 
         this.setState({
             down: false
         })
 
-        if (this.props.disabled) {
-            this.props.onDisabled()
+        if (disabled) {
+            onDisabled()
             return
         }
 
         //react native doesnt accect the value being reset to a new value of zero
         this.state.amountDown.setValue(0)
 
-        this.props.onUp()
+        if (onUp) {
+            onUp()
+        }
     }
 
     componentDidUpdate(prevProps, prevState) {

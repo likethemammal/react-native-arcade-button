@@ -28,7 +28,6 @@
   "dependencies": {
     "@likethemammal/general-components": "^0.1.6",
     "lodash": "^4.17.4",
-    "react": "16.2.0",
     "reselect": "^3.0.1",
     "underscore": "^1.8.3",
     "@likethemammal/react-primitives": "0.4.5"
@@ -49,9 +48,9 @@
     "file-loader": "^0.11.1",
     "jest": "^21.2.1",
     "raw-loader": "^0.5.1",
-    "react-addons-test-utils": "15.4.2",
+    "react": "16.2.0",
     "react-dom": "16.2.0",
-    "react-test-renderer": "^15.4.2",
+    "react-test-renderer": "16.2.0",
     "source-map-loader": "^0.2.3",
     "style-loader": "^0.19.0",
     "uglifyjs-webpack-plugin": "^1.1.6",

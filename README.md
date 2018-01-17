@@ -5,3 +5,7 @@ likethemammal/react-primitives-arcade-button
 =========
 
 No ready for use yet. Waiting on a react-primitives fix
+
+todo:
+
+[] Make issue in react-primitives for Components being rendered with UMD from the browser window (make repo to illustrate issue)

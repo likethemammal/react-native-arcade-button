@@ -1,7 +1,9 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
 
+import ArcadeButton from '../src'
+
 ReactDOM.render(
-    <window.ArcadeButton onUp={() => { console.log('click') }}/>,
+    <ArcadeButton />,
     document.getElementById('app')
 )
