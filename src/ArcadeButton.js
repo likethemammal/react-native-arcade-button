@@ -7,7 +7,7 @@ import {
     Touchable,
 } from '@likethemammal/react-primitives'
 
-import colors from '../constants/colors'
+import colors from './constants/colors'
 
 const reflectionColor = 'rgba(255,255,255,0.35)'
 const shadowColor = 'rgba(0,0,0,0.1)'
