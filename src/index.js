@@ -1,1 +1,3 @@
-module.exports = require('./components/ArcadeButton').default
+import ArcadeButton from './components/ArcadeButton'
+
+module.exports = ArcadeButton

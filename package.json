@@ -13,7 +13,7 @@
   },
   "homepage": "https://github.com/likethemammal/react-primitives-arcade-button#readme",
   "keywords": [
-    "react"
+    "react-primitives"
   ],
   "scripts": {
     "prepublishOnly": "npm run build",
@@ -24,30 +24,27 @@
   },
   "main": "bin/lib.js",
   "files": [
-    "bin"
+    "bin",
+    "README.md"
   ],
   "dependencies": {
-    "@likethemammal/general-components": "^0.1.6",
     "@likethemammal/react-primitives": "0.4.5",
     "lodash": "^4.17.4",
-    "reselect": "^3.0.1",
     "underscore": "^1.8.3"
   },
   "devDependencies": {
+    "@likethemammal/general-components": "^0.1.6",
     "babel-core": "^6.24.1",
     "babel-jest": "^21.2.0",
     "babel-loader": "^7.0.0",
     "babel-preset-es2015": "^6.24.1",
     "babel-preset-react": "^6.24.1",
     "babel-preset-stage-0": "^6.24.1",
-    "copy-webpack-plugin": "^4.2.0",
     "coveralls": "^3.0.0",
     "enzyme": "^3.2.0",
     "enzyme-adapter-react-15.4": "^1.0.5",
     "enzyme-to-json": "^3.2.2",
-    "file-loader": "^0.11.1",
     "jest": "^21.2.1",
-    "raw-loader": "^0.5.1",
     "react": "16.2.0",
     "react-dom": "16.2.0",
     "react-test-renderer": "16.2.0",
@@ -59,9 +56,6 @@
   },
   "jest": {
     "setupTestFrameworkScriptFile": "<rootDir>test.config.js",
-    "moduleNameMapper": {
-      "\\.(jpg|jpeg|png|gif|eot|otf|webp|svg|ttf|woff|woff2|mp4|webm|wav|mp3|m4a|aac|oga)$": "<rootDir>src/__mocks__/file_mock.js"
-    },
     "testPathIgnorePatterns": [
       "/node_modules/"
     ]

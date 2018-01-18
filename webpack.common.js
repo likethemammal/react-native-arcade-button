@@ -27,16 +27,6 @@ const config = {
                     'babel-loader',
                     'source-map-loader',
                 ],
-            },
-            {
-                test: /\.json$/,
-                use: ["json-loader"],
-                exclude: /(node_modules)/,
-            },
-            {
-                test: /\.(svg)$/,
-                use: ['raw-loader'],
-                exclude: /(node_modules)/,
             }
         ]
 
