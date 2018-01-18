@@ -1,7 +1,9 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
 
-import ArcadeButton from '../src'
+import ArcadeButton from '../bin/lib'
+
+console.log(ArcadeButton)
 
 ReactDOM.render(
     <ArcadeButton />,

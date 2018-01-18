@@ -1,13 +1,6 @@
 const path = require('path')
 
-const CopyWebpackPlugin = require('copy-webpack-plugin')
-
-const plugins = [
-    new CopyWebpackPlugin([
-        { from: 'example.html', to: 'index.html'}
-    ])
-]
-
+const plugins = []
 
 const config = {
 
@@ -15,13 +8,11 @@ const config = {
 
     entry: {
         lib: './index.js',
-        example: './example.js'
     },
 
     output: {
         filename: '[name].js',
         path:  path.resolve(__dirname, './bin'),
-        publicPath: '/',
 
         library: 'ArcadeButton',
         libraryTarget: 'umd',
