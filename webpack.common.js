@@ -7,7 +7,7 @@ const config = {
     context: path.resolve(__dirname, './src'),
 
     entry: {
-        lib: './index.js',
+        lib: './ArcadeButton.js',
     },
 
     output: {
