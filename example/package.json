@@ -12,5 +12,9 @@
     "source-map-loader": "^0.2.3",
     "webpack": "3.9.1",
     "webpack-dev-server": "^2.10.1"
+  },
+  "peerDependencies": {
+    "react": ">=15.4.2",
+    "react-dom": ">=15.4.2"
   }
 }

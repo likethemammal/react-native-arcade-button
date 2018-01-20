@@ -7,7 +7,17 @@ import {
     Touchable,
 } from '@likethemammal/react-primitives'
 
-import colors from './constants/colors'
+const colors =  {
+
+    offwhite: '#eeeeee',
+    alto: '#dddddd',
+    silver: '#cccccc',
+    silver_dark: '#bbbbbb',
+    dusty_gray: '#999999',
+    gray: '#888888',
+    emperor: '#555555',
+    mine_shaft: '#222222',
+}
 
 const reflectionColor = 'rgba(255,255,255,0.35)'
 const shadowColor = 'rgba(0,0,0,0.1)'
@@ -43,13 +53,13 @@ export default class ArcadeButton extends Component {
             return
         }
 
-        this.animationTimer = Animated.timing(          // Uses easing functions
-            this.state.amountDown,    // The value to drive
+        this.animationTimer = Animated.timing(
+            this.state.amountDown,
             {
                 toValue: 1,
                 delay: 0,
                 duration: 42
-            }            // Configuration
+            }
         );
 
         this.animationTimer.start()
