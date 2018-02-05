@@ -5,7 +5,7 @@ import {
     View,
     Animated,
     Touchable,
-} from '@likethemammal/react-primitives'
+} from 'react-primitives'
 
 const colors =  {
 
@@ -138,6 +138,7 @@ export default class ArcadeButton extends Component {
                     <View style={[styles.bottomRim, bottomRim, disabled && disabled.bottomFlat]} />
                     <View style={[styles.bottomShadow, disabled && disabled.bottomShadow]} />
                     <View style={[styles.bottomFlat, bottomFlat, disabled && disabled.bottomFlat]} />
+                    <View style={[styles.bottomFlatOverlay]} />
                 </View>
 
                 <View style={styles.top}>
@@ -267,6 +268,14 @@ const styles = StyleSheet.create({
         width: 200,
         height: 200,
         borderRadius: 100,
+    },
+    bottomFlatOverlay: {
+        position: 'absolute',
+        width: 200,
+        height: 200,
+        marginTop: 5,
+        borderRadius: 100,
+        backgroundColor: 'rgba(0,0,0,0.07)',
     },
     bottomShadow: {
         position: 'absolute',

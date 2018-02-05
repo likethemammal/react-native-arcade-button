@@ -11,10 +11,12 @@
     "react-dom": "16.2.0",
     "source-map-loader": "^0.2.3",
     "webpack": "3.9.1",
-    "webpack-dev-server": "^2.10.1"
+    "webpack-dev-server": "^2.10.1",
+    "react-native": "^0.52.2",
+    "react-native-web": "^0.3.4"
   },
   "peerDependencies": {
-    "react": ">=15.4.2",
-    "react-dom": ">=15.4.2"
+    "react": ">=16.2.x",
+    "react-dom": ">=16.2.x"
   }
 }

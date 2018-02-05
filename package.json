@@ -1,26 +1,26 @@
 {
-  "name": "react-primitives-arcade-button",
-  "version": "0.1.7",
-  "description": "Arcade button component for React and React Native",
+  "name": "react-native-arcade-button",
+  "version": "0.0.1",
+  "description": "Arcade button component for React Native",
   "author": "Chris Dolphin",
   "license": "Apache-2.0",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/likethemammal/react-primitives-arcade-button.git"
+    "url": "git+https://github.com/likethemammal/react-native-arcade-button.git"
   },
   "bugs": {
-    "url": "https://github.com/likethemammal/react-primitives-arcade-button/issues"
+    "url": "https://github.com/likethemammal/react-native-arcade-button/issues"
   },
-  "homepage": "https://github.com/likethemammal/react-primitives-arcade-button#readme",
+  "homepage": "https://github.com/likethemammal/react-native-arcade-button#readme",
   "keywords": [
-    "react-primitives"
+    "react-native"
   ],
   "scripts": {
     "prepublishOnly": "npm run build",
     "test": "jest -u",
     "cover": "jest --coverage -u",
     "build": "webpack --config webpack.prod.js",
-    "dev": "webpack-dev-server --config webpack.dev.js"
+    "dev": "webpack --config webpack.dev.js"
   },
   "main": "bin/lib.js",
   "files": [
@@ -28,7 +28,6 @@
     "README.md"
   ],
   "dependencies": {
-    "@likethemammal/react-primitives": "0.4.5",
     "lodash": "^4.17.4",
     "underscore": "^1.8.3"
   },
@@ -47,6 +46,7 @@
     "jest": "^21.2.1",
     "react": "16.2.0",
     "react-dom": "16.2.0",
+    "react-primitives": "^0.5.0",
     "react-test-renderer": "16.2.0",
     "source-map-loader": "^0.2.3",
     "uglifyjs-webpack-plugin": "^1.1.6",
@@ -55,8 +55,8 @@
     "webpack-merge": "^4.1.1"
   },
   "peerDependencies": {
-    "react": ">=15.4.2",
-    "react-dom": ">=15.4.2"
+    "react": ">=16.2.x",
+    "react-dom": ">=16.2.x"
   },
   "jest": {
     "setupTestFrameworkScriptFile": "<rootDir>test.config.js",
