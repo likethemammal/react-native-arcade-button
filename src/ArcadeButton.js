@@ -37,7 +37,7 @@ export default class ArcadeButton extends Component {
 
     animationTimer = false
 
-    onDown = () => {
+    onDown = (e) => {
 
         if (this.state.down) {
             return
@@ -65,27 +65,27 @@ export default class ArcadeButton extends Component {
         this.animationTimer.start()
 
         if (onDown) {
-            onDown()
+            onDown(e)
         }
     }
 
-    onUp = () => {
-        const { onUp, disabled, onDisabled, } = this.props
+    onUp = (e) => {
+        const { onUp, disabled, onDisabledUp, } = this.props
 
         this.setState({
             down: false
         })
 
         if (disabled) {
-            if (onDisabled) onDisabled()
+            if (onDisabledUp) onDisabledUp(e)
             return
         }
 
-        //react native doesnt accect the value being reset to a new value of zero
+        //react native doesnt accept the value being reset to a new value of zero
         this.state.amountDown.setValue(0)
 
         if (onUp) {
-            onUp()
+            onUp(e)
         }
     }
 
@@ -102,7 +102,7 @@ export default class ArcadeButton extends Component {
     render() {
 
         const { amountDown } = this.state
-        const { color, text } = this.props
+        const { color, children } = this.props
 
         const topDepressed = {
             transform: [{
@@ -151,9 +151,7 @@ export default class ArcadeButton extends Component {
 
                         <Touchable onPressIn={this.onDown} onPressOut={this.onUp}>
                             <View style={[styles.topFlat, topFlat, disabled && disabled.topFlat]}>
-                                <Text style={[styles.text, disabled && disabled.text]}>
-                                    {text}
-                                </Text>
+                                {children}
                             </View>
                         </Touchable>
 
@@ -172,10 +170,10 @@ const disabledStyles = StyleSheet.create({
         borderColor: colors.silver_dark,
     },
     topReflection: {
-        backgroundColor: colors.silver,
+        backgroundColor: bottomShadowColor,
     },
     bottomFlat: {
-        borderColor: colors.silver,
+        borderColor: bottomShadowColor,
         backgroundColor: colors.silver_dark,
     },
     topShadow: {
@@ -187,10 +185,6 @@ const disabledStyles = StyleSheet.create({
     },
     bottomShadowUnder: {
         backgroundColor: bottomShadowColor,
-    },
-    text: {
-        textShadowColor: 'rgba(0,0,0,0.0)',
-        opacity: 0.5,
     }
 })
 
@@ -215,18 +209,6 @@ const styles = StyleSheet.create({
         borderRadius: 75,
         borderWidth: 1,
         borderStyle: 'solid',
-    },
-    text: {
-        color: 'white',
-        fontWeight: 'bold',
-        fontSize: 32,
-        textShadowOffset: {
-            width: 0,
-            height: 1
-        },
-        textShadowColor: 'rgba(0,0,0,0.2)',
-        textShadowRadius: 5,
-        textTransform: 'uppercase'
     },
     topShadow: {
         position: 'absolute',
@@ -275,7 +257,7 @@ const styles = StyleSheet.create({
         height: 200,
         marginTop: 5,
         borderRadius: 100,
-        backgroundColor: 'rgba(0,0,0,0.07)',
+        backgroundColor: 'rgba(0,0,0,0.05)',
     },
     bottomShadow: {
         position: 'absolute',

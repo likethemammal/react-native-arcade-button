@@ -7,9 +7,9 @@ import { AppRegistry } from 'react-native-web'
 class App extends Component {
     render() {
         return <ArcadeButton
-            text={'Arcade'}
-            color={'green'}
-        />
+        >
+            <div>test</div>
+        </ArcadeButton>
     }
 }
 
