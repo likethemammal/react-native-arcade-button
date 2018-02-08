@@ -1,11 +1,23 @@
-[![Build Status](https://travis-ci.org/likethemammal/react-primitives-arcade-button.svg?branch=master)](https://travis-ci.org/likethemammal/open-source-react-component-example)
-[![Coverage Status](https://coveralls.io/repos/github/likethemammal/react-primitives-arcade-button/badge.svg?branch=master)](https://coveralls.io/github/likethemammal/open-source-react-component-example?branch=master)
+[![Build Status](https://travis-ci.org/likethemammal/react-native-arcade-button.svg?branch=master)](https://travis-ci.org/likethemammal/react-native-arcade-button)
+[![Coverage Status](https://coveralls.io/repos/github/likethemammal/react-native-arcade-button/badge.svg?branch=master)](https://coveralls.io/github/likethemammal/react-native-arcade-button?branch=master)
 
-likethemammal/react-primitives-arcade-button
+likethemammal/react-native-arcade-button
 =========
 
-No ready for use yet. Waiting on a react-primitives fix
+Not ready for use
 
-todo:
+    //grid of props
 
-[] Make issue in react-primitives for Components being rendered with UMD from the browser window (make repo to illustrate issue)
+        //default props
+
+        //prop name
+
+        //desc
+
+        //type
+
+    //easily copyable example usage test
+
+    //arcade button colors
+
+    //live demo

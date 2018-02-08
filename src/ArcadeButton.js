@@ -7,6 +7,8 @@ import {
     Touchable,
 } from 'react-primitives'
 
+import 'raf/polyfill'
+
 const colors =  {
 
     offwhite: '#eeeeee',
@@ -37,13 +39,13 @@ export default class ArcadeButton extends Component {
 
     animationTimer = false
 
-    onDown = (e) => {
+    onPressIn = (e) => {
 
         if (this.state.down) {
             return
         }
 
-        const { onDown, disabled } = this.props
+        const { onPressIn, disabled } = this.props
 
         this.setState({
             down: true
@@ -64,28 +66,28 @@ export default class ArcadeButton extends Component {
 
         this.animationTimer.start()
 
-        if (onDown) {
-            onDown(e)
+        if (onPressIn) {
+            onPressIn(e)
         }
     }
 
-    onUp = (e) => {
-        const { onUp, disabled, onDisabledUp, } = this.props
+    onPressOut = (e) => {
+        const { onPressOut, disabled, onDisabledOut, } = this.props
 
         this.setState({
             down: false
         })
 
         if (disabled) {
-            if (onDisabledUp) onDisabledUp(e)
+            if (onDisabledOut) onDisabledOut(e)
             return
         }
 
         //react native doesnt accept the value being reset to a new value of zero
         this.state.amountDown.setValue(0)
 
-        if (onUp) {
-            onUp(e)
+        if (onPressOut) {
+            onPressOut(e)
         }
     }
 
@@ -149,7 +151,7 @@ export default class ArcadeButton extends Component {
 
                         <View style={[styles.topReflection, disabled && disabled.topReflection]} />
 
-                        <Touchable onPressIn={this.onDown} onPressOut={this.onUp}>
+                        <Touchable onPressIn={this.onPressIn} onPressOut={this.onPressOut}>
                             <View style={[styles.topFlat, topFlat, disabled && disabled.topFlat]}>
                                 {children}
                             </View>
@@ -160,7 +162,7 @@ export default class ArcadeButton extends Component {
                 </View>
 
             </View>
-        );
+        )
     }
 }
 
