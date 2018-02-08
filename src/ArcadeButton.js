@@ -8,6 +8,7 @@ import {
 } from 'react-primitives'
 
 import 'raf/polyfill'
+import raf from 'raf/polyfill'
 
 const colors =  {
 
@@ -92,13 +93,21 @@ export default class ArcadeButton extends Component {
     }
 
     componentDidUpdate(prevProps, prevState) {
-        if (!prevProps.disabled && this.props.disabled) {
-            this.state.amountDown.setValue(1)
+        const { disabled } = this.props
+
+        /* istanbul ignore next */
+        if (
+            prevProps.disabled && disabled ||
+            !prevProps.disabled && !disabled
+        ) {
+            return
         }
 
-        if (prevProps.disabled && !this.props.disabled) {
-            this.state.amountDown.setValue(0)
-        }
+        /* istanbul ignore next */
+        this.state.amountDown.setValue(
+            disabled ? 0 : 1
+        )
+
     }
 
     render() {

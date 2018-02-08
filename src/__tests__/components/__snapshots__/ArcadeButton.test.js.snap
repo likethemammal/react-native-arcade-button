@@ -5,3 +5,5 @@ exports[`ArcadeButton Snapshot 0 should match 1`] = `undefined`;
 exports[`ArcadeButton Snapshot 1 should match 1`] = `undefined`;
 
 exports[`ArcadeButton Snapshot 2 should match 1`] = `undefined`;
+
+exports[`ArcadeButton Snapshot 3 should match 1`] = `undefined`;
