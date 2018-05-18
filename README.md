@@ -5,14 +5,18 @@ react-native-arcade-button
 [![Build Status](https://travis-ci.org/likethemammal/react-native-arcade-button.svg?branch=master)](https://travis-ci.org/likethemammal/react-native-arcade-button)
 [![Coverage Status](https://coveralls.io/repos/github/likethemammal/react-native-arcade-button/badge.svg?branch=master)](https://coveralls.io/github/likethemammal/react-native-arcade-button?branch=master)
 
-[![screenshot](example/screenshot.png)](https://codesandbox.io/s/1rk8r5j1z4)
+[![npm Version](https://img.shields.io/npm/v/react-native-arcade-button.svg)](https://www.npmjs.com/package/react-native-arcade-button)
+[![npm Downloads](https://img.shields.io/npm/dm/react-native-arcade-button.svg)](https://www.npmjs.com/package/react-native-arcade-button)
+[![license](https://img.shields.io/github/license/likethemammal/react-native-arcade-button.svg)](https://github.com/likethemammal/react-native-arcade-button/blob/master/LICENSE)
+
+[![screenshot](example/screenshot.png)](demo)
 
 [Live Demo (CodeSandbox)](https://codesandbox.io/s/1rk8r5j1z4)
 
 ## Installation
 
 ```sh
-npm i --save react-native-arcade-button
+npm install --save react-native-arcade-button
 ```
 
 ### Usage
@@ -25,7 +29,7 @@ import ArcadeButton from 'react-native-arcade-button'
 class Foo extends React.Component {
 
   onClick = (e) => {
-    //...some code
+    //...do some logic
   }
 
   render() {
@@ -51,3 +55,11 @@ class Foo extends React.Component {
 | onDisabledOut | func | null | When `disabled` is true, function is called when button is pressed out anyway. |
 | onPressIn | func | null | Function called when button press in. |
 | onPressOut | func | null | Function called when button is released. |
+
+### License
+
+Made with 🍊 by [Chris Dolphin](https://github.com/likethemammal)
+
+[![license](https://img.shields.io/github/license/likethemammal/react-native-arcade-button.svg?style=flat-square)](https://github.com/likethemammal/react-native-arcade-button/blob/master/LICENSE)
+
+[demo]: (https://codesandbox.io/s/1rk8r5j1z4)
