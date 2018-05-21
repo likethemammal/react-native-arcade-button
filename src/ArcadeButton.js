@@ -4,11 +4,8 @@ import {
     Text,
     View,
     Animated,
-    Touchable,
-} from 'react-primitives'
-
-import 'raf/polyfill'
-import raf from 'raf/polyfill'
+    TouchableWithoutFeedback,
+} from 'react-native-web'
 
 const colors =  {
 
@@ -160,11 +157,11 @@ export default class ArcadeButton extends Component {
 
                         <View style={[styles.topReflection, disabled && disabled.topReflection]} />
 
-                        <Touchable onPressIn={this.onPressIn} onPressOut={this.onPressOut}>
+                        <TouchableWithoutFeedback onPressIn={this.onPressIn} onPressOut={this.onPressOut}>
                             <View style={[styles.topFlat, topFlat, disabled && disabled.topFlat]}>
                                 {children}
                             </View>
-                        </Touchable>
+                        </TouchableWithoutFeedback>
 
                     </Animated.View>
 

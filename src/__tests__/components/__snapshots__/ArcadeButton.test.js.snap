@@ -1,1075 +1,324 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`ArcadeButton Snapshot 0 should match 1`] = `
-ShallowWrapper {
-  "length": 1,
-  Symbol(enzyme.__root__): [Circular],
-  Symbol(enzyme.__unrendered__): <ArcadeButton
-    color="hsla(120, 52%, 48%, 1)"
-    onPressIn={[Function]}
-    onPressOut={[Function]}
-  />,
-  Symbol(enzyme.__renderer__): Object {
-    "batchedUpdates": [Function],
-    "getNode": [Function],
-    "render": [Function],
-    "simulateEvent": [Function],
-    "unmount": [Function],
-  },
-  Symbol(enzyme.__node__): Object {
-    "instance": null,
-    "key": undefined,
-    "nodeType": "class",
-    "props": Object {
-      "children": Array [
-        <View
-          style={85}
-        >
-          <View
-            style={
-              Array [
-                90,
-                undefined,
-              ]
-            }
-          />
-          <View
-            style={
-              Array [
-                87,
-                Object {
-                  "backgroundColor": "hsla(120, 52%, 48%, 1)",
-                },
-                undefined,
-              ]
-            }
-          />
-          <View
-            style={
-              Array [
-                89,
-                undefined,
-              ]
-            }
-          />
-          <View
-            style={
-              Array [
-                86,
-                Object {
-                  "backgroundColor": "hsla(120, 52%, 48%, 1)",
-                },
-                undefined,
-              ]
-            }
-          />
-          <View
-            style={
-              Array [
-                88,
-              ]
-            }
-          />
-        </View>,
-        <View
-          style={80}
-        >
-          <View
-            style={
-              Array [
-                82,
-                undefined,
-              ]
-            }
-          />
-          <AnimatedComponent
-            style={
-              Object {
-                "opacity": 1,
-                "transform": Array [
-                  Object {
-                    "translateY": 0,
-                  },
-                ],
-                "zIndex": 1,
-              }
-            }
-          >
-            <View
-              style={
-                Array [
-                  83,
-                  undefined,
-                ]
-              }
-            />
-            <Touchable
-              activeValue={1}
-              delayLongPress={500}
-              delayPressIn={0}
-              delayPressOut={100}
-              onPressIn={[Function]}
-              onPressOut={[Function]}
-              press={0}
-              pressDuration={150}
-              pressRetentionOffset={
-                Object {
-                  "bottom": 30,
-                  "left": 20,
-                  "right": 20,
-                  "top": 20,
-                }
-              }
-            >
-              <View
-                style={
-                  Array [
-                    81,
-                    Object {
-                      "backgroundColor": "hsla(120, 52%, 48%, 1)",
-                      "borderColor": "hsla(120, 52%, 48%, 1)",
-                    },
-                    undefined,
-                  ]
-                }
-              />
-            </Touchable>
-          </AnimatedComponent>
-        </View>,
-      ],
-      "style": 79,
-    },
-    "ref": null,
-    "rendered": Array [
-      Object {
-        "instance": null,
-        "key": undefined,
-        "nodeType": "class",
-        "props": Object {
-          "children": Array [
-            <View
-              style={
-                Array [
-                  90,
-                  undefined,
-                ]
-              }
-            />,
-            <View
-              style={
-                Array [
-                  87,
-                  Object {
-                    "backgroundColor": "hsla(120, 52%, 48%, 1)",
-                  },
-                  undefined,
-                ]
-              }
-            />,
-            <View
-              style={
-                Array [
-                  89,
-                  undefined,
-                ]
-              }
-            />,
-            <View
-              style={
-                Array [
-                  86,
-                  Object {
-                    "backgroundColor": "hsla(120, 52%, 48%, 1)",
-                  },
-                  undefined,
-                ]
-              }
-            />,
-            <View
-              style={
-                Array [
-                  88,
-                ]
-              }
-            />,
-          ],
-          "style": 85,
-        },
-        "ref": null,
-        "rendered": Array [
+<View
+  style={81}
+>
+  <View
+    style={87}
+  >
+    <View
+      style={
+        Array [
+          92,
+          undefined,
+        ]
+      }
+    />
+    <View
+      style={
+        Array [
+          89,
           Object {
-            "instance": null,
-            "key": undefined,
-            "nodeType": "class",
-            "props": Object {
-              "style": Array [
-                90,
-                undefined,
-              ],
-            },
-            "ref": null,
-            "rendered": null,
-            "type": [Function],
+            "backgroundColor": "hsla(120, 52%, 48%, 1)",
           },
+          undefined,
+        ]
+      }
+    />
+    <View
+      style={
+        Array [
+          91,
+          undefined,
+        ]
+      }
+    />
+    <View
+      style={
+        Array [
+          88,
           Object {
-            "instance": null,
-            "key": undefined,
-            "nodeType": "class",
-            "props": Object {
-              "style": Array [
-                87,
-                Object {
-                  "backgroundColor": "hsla(120, 52%, 48%, 1)",
-                },
-                undefined,
-              ],
-            },
-            "ref": null,
-            "rendered": null,
-            "type": [Function],
+            "backgroundColor": "hsla(120, 52%, 48%, 1)",
           },
-          Object {
-            "instance": null,
-            "key": undefined,
-            "nodeType": "class",
-            "props": Object {
-              "style": Array [
-                89,
-                undefined,
-              ],
-            },
-            "ref": null,
-            "rendered": null,
-            "type": [Function],
-          },
-          Object {
-            "instance": null,
-            "key": undefined,
-            "nodeType": "class",
-            "props": Object {
-              "style": Array [
-                86,
-                Object {
-                  "backgroundColor": "hsla(120, 52%, 48%, 1)",
-                },
-                undefined,
-              ],
-            },
-            "ref": null,
-            "rendered": null,
-            "type": [Function],
-          },
-          Object {
-            "instance": null,
-            "key": undefined,
-            "nodeType": "class",
-            "props": Object {
-              "style": Array [
-                88,
-              ],
-            },
-            "ref": null,
-            "rendered": null,
-            "type": [Function],
-          },
-        ],
-        "type": [Function],
-      },
-      Object {
-        "instance": null,
-        "key": undefined,
-        "nodeType": "class",
-        "props": Object {
-          "children": Array [
-            <View
-              style={
-                Array [
-                  82,
-                  undefined,
-                ]
-              }
-            />,
-            <AnimatedComponent
-              style={
-                Object {
-                  "opacity": 1,
-                  "transform": Array [
-                    Object {
-                      "translateY": 0,
-                    },
-                  ],
-                  "zIndex": 1,
-                }
-              }
-            >
-              <View
-                style={
-                  Array [
-                    83,
-                    undefined,
-                  ]
-                }
-              />
-              <Touchable
-                activeValue={1}
-                delayLongPress={500}
-                delayPressIn={0}
-                delayPressOut={100}
-                onPressIn={[Function]}
-                onPressOut={[Function]}
-                press={0}
-                pressDuration={150}
-                pressRetentionOffset={
-                  Object {
-                    "bottom": 30,
-                    "left": 20,
-                    "right": 20,
-                    "top": 20,
-                  }
-                }
-              >
-                <View
-                  style={
-                    Array [
-                      81,
-                      Object {
-                        "backgroundColor": "hsla(120, 52%, 48%, 1)",
-                        "borderColor": "hsla(120, 52%, 48%, 1)",
-                      },
-                      undefined,
-                    ]
-                  }
-                />
-              </Touchable>
-            </AnimatedComponent>,
-          ],
-          "style": 80,
-        },
-        "ref": null,
-        "rendered": Array [
-          Object {
-            "instance": null,
-            "key": undefined,
-            "nodeType": "class",
-            "props": Object {
-              "style": Array [
-                82,
-                undefined,
-              ],
-            },
-            "ref": null,
-            "rendered": null,
-            "type": [Function],
-          },
-          Object {
-            "instance": null,
-            "key": undefined,
-            "nodeType": "class",
-            "props": Object {
-              "children": Array [
-                <View
-                  style={
-                    Array [
-                      83,
-                      undefined,
-                    ]
-                  }
-                />,
-                <Touchable
-                  activeValue={1}
-                  delayLongPress={500}
-                  delayPressIn={0}
-                  delayPressOut={100}
-                  onPressIn={[Function]}
-                  onPressOut={[Function]}
-                  press={0}
-                  pressDuration={150}
-                  pressRetentionOffset={
-                    Object {
-                      "bottom": 30,
-                      "left": 20,
-                      "right": 20,
-                      "top": 20,
-                    }
-                  }
-                >
-                  <View
-                    style={
-                      Array [
-                        81,
-                        Object {
-                          "backgroundColor": "hsla(120, 52%, 48%, 1)",
-                          "borderColor": "hsla(120, 52%, 48%, 1)",
-                        },
-                        undefined,
-                      ]
-                    }
-                  />
-                </Touchable>,
-              ],
-              "style": Object {
-                "opacity": 1,
-                "transform": Array [
-                  Object {
-                    "translateY": 0,
-                  },
-                ],
-                "zIndex": 1,
-              },
-            },
-            "ref": null,
-            "rendered": Array [
-              Object {
-                "instance": null,
-                "key": undefined,
-                "nodeType": "class",
-                "props": Object {
-                  "style": Array [
-                    83,
-                    undefined,
-                  ],
-                },
-                "ref": null,
-                "rendered": null,
-                "type": [Function],
-              },
-              Object {
-                "instance": null,
-                "key": undefined,
-                "nodeType": "class",
-                "props": Object {
-                  "activeValue": 1,
-                  "children": <View
-                    style={
-                      Array [
-                        81,
-                        Object {
-                          "backgroundColor": "hsla(120, 52%, 48%, 1)",
-                          "borderColor": "hsla(120, 52%, 48%, 1)",
-                        },
-                        undefined,
-                      ]
-                    }
-                  />,
-                  "delayLongPress": 500,
-                  "delayPressIn": 0,
-                  "delayPressOut": 100,
-                  "onPressIn": [Function],
-                  "onPressOut": [Function],
-                  "press": 0,
-                  "pressDuration": 150,
-                  "pressRetentionOffset": Object {
-                    "bottom": 30,
-                    "left": 20,
-                    "right": 20,
-                    "top": 20,
-                  },
-                },
-                "ref": null,
-                "rendered": Object {
-                  "instance": null,
-                  "key": undefined,
-                  "nodeType": "class",
-                  "props": Object {
-                    "children": undefined,
-                    "style": Array [
-                      81,
-                      Object {
-                        "backgroundColor": "hsla(120, 52%, 48%, 1)",
-                        "borderColor": "hsla(120, 52%, 48%, 1)",
-                      },
-                      undefined,
-                    ],
-                  },
-                  "ref": null,
-                  "rendered": null,
-                  "type": [Function],
-                },
-                "type": [Function],
-              },
-            ],
-            "type": [Function],
-          },
-        ],
-        "type": [Function],
-      },
-    ],
-    "type": [Function],
-  },
-  Symbol(enzyme.__nodes__): Array [
-    Object {
-      "instance": null,
-      "key": undefined,
-      "nodeType": "class",
-      "props": Object {
-        "children": Array [
-          <View
-            style={85}
-          >
-            <View
-              style={
-                Array [
-                  90,
-                  undefined,
-                ]
-              }
-            />
-            <View
-              style={
-                Array [
-                  87,
-                  Object {
-                    "backgroundColor": "hsla(120, 52%, 48%, 1)",
-                  },
-                  undefined,
-                ]
-              }
-            />
-            <View
-              style={
-                Array [
-                  89,
-                  undefined,
-                ]
-              }
-            />
-            <View
-              style={
-                Array [
-                  86,
-                  Object {
-                    "backgroundColor": "hsla(120, 52%, 48%, 1)",
-                  },
-                  undefined,
-                ]
-              }
-            />
-            <View
-              style={
-                Array [
-                  88,
-                ]
-              }
-            />
-          </View>,
-          <View
-            style={80}
-          >
-            <View
-              style={
-                Array [
-                  82,
-                  undefined,
-                ]
-              }
-            />
-            <AnimatedComponent
-              style={
-                Object {
-                  "opacity": 1,
-                  "transform": Array [
-                    Object {
-                      "translateY": 0,
-                    },
-                  ],
-                  "zIndex": 1,
-                }
-              }
-            >
-              <View
-                style={
-                  Array [
-                    83,
-                    undefined,
-                  ]
-                }
-              />
-              <Touchable
-                activeValue={1}
-                delayLongPress={500}
-                delayPressIn={0}
-                delayPressOut={100}
-                onPressIn={[Function]}
-                onPressOut={[Function]}
-                press={0}
-                pressDuration={150}
-                pressRetentionOffset={
-                  Object {
-                    "bottom": 30,
-                    "left": 20,
-                    "right": 20,
-                    "top": 20,
-                  }
-                }
-              >
-                <View
-                  style={
-                    Array [
-                      81,
-                      Object {
-                        "backgroundColor": "hsla(120, 52%, 48%, 1)",
-                        "borderColor": "hsla(120, 52%, 48%, 1)",
-                      },
-                      undefined,
-                    ]
-                  }
-                />
-              </Touchable>
-            </AnimatedComponent>
-          </View>,
-        ],
-        "style": 79,
-      },
-      "ref": null,
-      "rendered": Array [
+          undefined,
+        ]
+      }
+    />
+    <View
+      style={
+        Array [
+          90,
+        ]
+      }
+    />
+  </View>
+  <View
+    style={82}
+  >
+    <View
+      style={
+        Array [
+          84,
+          undefined,
+        ]
+      }
+    />
+    <AnimatedComponent
+      style={
         Object {
-          "instance": null,
-          "key": undefined,
-          "nodeType": "class",
-          "props": Object {
-            "children": Array [
-              <View
-                style={
-                  Array [
-                    90,
-                    undefined,
-                  ]
-                }
-              />,
-              <View
-                style={
-                  Array [
-                    87,
-                    Object {
-                      "backgroundColor": "hsla(120, 52%, 48%, 1)",
-                    },
-                    undefined,
-                  ]
-                }
-              />,
-              <View
-                style={
-                  Array [
-                    89,
-                    undefined,
-                  ]
-                }
-              />,
-              <View
-                style={
-                  Array [
-                    86,
-                    Object {
-                      "backgroundColor": "hsla(120, 52%, 48%, 1)",
-                    },
-                    undefined,
-                  ]
-                }
-              />,
-              <View
-                style={
-                  Array [
-                    88,
-                  ]
-                }
-              />,
-            ],
-            "style": 85,
-          },
-          "ref": null,
-          "rendered": Array [
+          "opacity": 1,
+          "transform": Array [
             Object {
-              "instance": null,
-              "key": undefined,
-              "nodeType": "class",
-              "props": Object {
-                "style": Array [
-                  90,
-                  undefined,
-                ],
-              },
-              "ref": null,
-              "rendered": null,
-              "type": [Function],
-            },
-            Object {
-              "instance": null,
-              "key": undefined,
-              "nodeType": "class",
-              "props": Object {
-                "style": Array [
-                  87,
-                  Object {
-                    "backgroundColor": "hsla(120, 52%, 48%, 1)",
-                  },
-                  undefined,
-                ],
-              },
-              "ref": null,
-              "rendered": null,
-              "type": [Function],
-            },
-            Object {
-              "instance": null,
-              "key": undefined,
-              "nodeType": "class",
-              "props": Object {
-                "style": Array [
-                  89,
-                  undefined,
-                ],
-              },
-              "ref": null,
-              "rendered": null,
-              "type": [Function],
-            },
-            Object {
-              "instance": null,
-              "key": undefined,
-              "nodeType": "class",
-              "props": Object {
-                "style": Array [
-                  86,
-                  Object {
-                    "backgroundColor": "hsla(120, 52%, 48%, 1)",
-                  },
-                  undefined,
-                ],
-              },
-              "ref": null,
-              "rendered": null,
-              "type": [Function],
-            },
-            Object {
-              "instance": null,
-              "key": undefined,
-              "nodeType": "class",
-              "props": Object {
-                "style": Array [
-                  88,
-                ],
-              },
-              "ref": null,
-              "rendered": null,
-              "type": [Function],
+              "translateY": 0,
             },
           ],
-          "type": [Function],
-        },
-        Object {
-          "instance": null,
-          "key": undefined,
-          "nodeType": "class",
-          "props": Object {
-            "children": Array [
-              <View
-                style={
-                  Array [
-                    82,
-                    undefined,
-                  ]
-                }
-              />,
-              <AnimatedComponent
-                style={
-                  Object {
-                    "opacity": 1,
-                    "transform": Array [
-                      Object {
-                        "translateY": 0,
-                      },
-                    ],
-                    "zIndex": 1,
-                  }
-                }
-              >
-                <View
-                  style={
-                    Array [
-                      83,
-                      undefined,
-                    ]
-                  }
-                />
-                <Touchable
-                  activeValue={1}
-                  delayLongPress={500}
-                  delayPressIn={0}
-                  delayPressOut={100}
-                  onPressIn={[Function]}
-                  onPressOut={[Function]}
-                  press={0}
-                  pressDuration={150}
-                  pressRetentionOffset={
-                    Object {
-                      "bottom": 30,
-                      "left": 20,
-                      "right": 20,
-                      "top": 20,
-                    }
-                  }
-                >
-                  <View
-                    style={
-                      Array [
-                        81,
-                        Object {
-                          "backgroundColor": "hsla(120, 52%, 48%, 1)",
-                          "borderColor": "hsla(120, 52%, 48%, 1)",
-                        },
-                        undefined,
-                      ]
-                    }
-                  />
-                </Touchable>
-              </AnimatedComponent>,
-            ],
-            "style": 80,
-          },
-          "ref": null,
-          "rendered": Array [
-            Object {
-              "instance": null,
-              "key": undefined,
-              "nodeType": "class",
-              "props": Object {
-                "style": Array [
-                  82,
-                  undefined,
-                ],
+          "zIndex": 1,
+        }
+      }
+    >
+      <View
+        style={
+          Array [
+            85,
+            undefined,
+          ]
+        }
+      />
+      <TouchableWithoutFeedback
+        onPressIn={[Function]}
+        onPressOut={[Function]}
+      >
+        <View
+          style={
+            Array [
+              83,
+              Object {
+                "backgroundColor": "hsla(120, 52%, 48%, 1)",
+                "borderColor": "hsla(120, 52%, 48%, 1)",
               },
-              "ref": null,
-              "rendered": null,
-              "type": [Function],
-            },
-            Object {
-              "instance": null,
-              "key": undefined,
-              "nodeType": "class",
-              "props": Object {
-                "children": Array [
-                  <View
-                    style={
-                      Array [
-                        83,
-                        undefined,
-                      ]
-                    }
-                  />,
-                  <Touchable
-                    activeValue={1}
-                    delayLongPress={500}
-                    delayPressIn={0}
-                    delayPressOut={100}
-                    onPressIn={[Function]}
-                    onPressOut={[Function]}
-                    press={0}
-                    pressDuration={150}
-                    pressRetentionOffset={
-                      Object {
-                        "bottom": 30,
-                        "left": 20,
-                        "right": 20,
-                        "top": 20,
-                      }
-                    }
-                  >
-                    <View
-                      style={
-                        Array [
-                          81,
-                          Object {
-                            "backgroundColor": "hsla(120, 52%, 48%, 1)",
-                            "borderColor": "hsla(120, 52%, 48%, 1)",
-                          },
-                          undefined,
-                        ]
-                      }
-                    />
-                  </Touchable>,
-                ],
-                "style": Object {
-                  "opacity": 1,
-                  "transform": Array [
-                    Object {
-                      "translateY": 0,
-                    },
-                  ],
-                  "zIndex": 1,
-                },
-              },
-              "ref": null,
-              "rendered": Array [
-                Object {
-                  "instance": null,
-                  "key": undefined,
-                  "nodeType": "class",
-                  "props": Object {
-                    "style": Array [
-                      83,
-                      undefined,
-                    ],
-                  },
-                  "ref": null,
-                  "rendered": null,
-                  "type": [Function],
-                },
-                Object {
-                  "instance": null,
-                  "key": undefined,
-                  "nodeType": "class",
-                  "props": Object {
-                    "activeValue": 1,
-                    "children": <View
-                      style={
-                        Array [
-                          81,
-                          Object {
-                            "backgroundColor": "hsla(120, 52%, 48%, 1)",
-                            "borderColor": "hsla(120, 52%, 48%, 1)",
-                          },
-                          undefined,
-                        ]
-                      }
-                    />,
-                    "delayLongPress": 500,
-                    "delayPressIn": 0,
-                    "delayPressOut": 100,
-                    "onPressIn": [Function],
-                    "onPressOut": [Function],
-                    "press": 0,
-                    "pressDuration": 150,
-                    "pressRetentionOffset": Object {
-                      "bottom": 30,
-                      "left": 20,
-                      "right": 20,
-                      "top": 20,
-                    },
-                  },
-                  "ref": null,
-                  "rendered": Object {
-                    "instance": null,
-                    "key": undefined,
-                    "nodeType": "class",
-                    "props": Object {
-                      "children": undefined,
-                      "style": Array [
-                        81,
-                        Object {
-                          "backgroundColor": "hsla(120, 52%, 48%, 1)",
-                          "borderColor": "hsla(120, 52%, 48%, 1)",
-                        },
-                        undefined,
-                      ],
-                    },
-                    "ref": null,
-                    "rendered": null,
-                    "type": [Function],
-                  },
-                  "type": [Function],
-                },
-              ],
-              "type": [Function],
-            },
-          ],
-          "type": [Function],
-        },
-      ],
-      "type": [Function],
-    },
-  ],
-  Symbol(enzyme.__options__): Object {
-    "adapter": ReactSixteenAdapter {
-      "options": Object {
-        "enableComponentDidUpdateOnSetState": true,
-      },
-    },
-  },
-}
+              undefined,
+            ]
+          }
+        />
+      </TouchableWithoutFeedback>
+    </AnimatedComponent>
+  </View>
+</View>
 `;
 
-exports[`ArcadeButton Snapshot 1 should match 1`] = `undefined`;
+exports[`ArcadeButton Snapshot 1 should match 1`] = `
+<View
+  style={81}
+>
+  <View
+    style={87}
+  >
+    <View
+      style={
+        Array [
+          92,
+          undefined,
+        ]
+      }
+    />
+    <View
+      style={
+        Array [
+          89,
+          Object {
+            "backgroundColor": "hsla(120, 52%, 48%, 1)",
+          },
+          undefined,
+        ]
+      }
+    />
+    <View
+      style={
+        Array [
+          91,
+          undefined,
+        ]
+      }
+    />
+    <View
+      style={
+        Array [
+          88,
+          Object {
+            "backgroundColor": "hsla(120, 52%, 48%, 1)",
+          },
+          undefined,
+        ]
+      }
+    />
+    <View
+      style={
+        Array [
+          90,
+        ]
+      }
+    />
+  </View>
+  <View
+    style={82}
+  >
+    <View
+      style={
+        Array [
+          84,
+          undefined,
+        ]
+      }
+    />
+    <AnimatedComponent
+      style={
+        Object {
+          "opacity": 1,
+          "transform": Array [
+            Object {
+              "translateY": 0,
+            },
+          ],
+          "zIndex": 1,
+        }
+      }
+    >
+      <View
+        style={
+          Array [
+            85,
+            undefined,
+          ]
+        }
+      />
+      <TouchableWithoutFeedback
+        onPressIn={[Function]}
+        onPressOut={[Function]}
+      >
+        <View
+          style={
+            Array [
+              83,
+              Object {
+                "backgroundColor": "hsla(120, 52%, 48%, 1)",
+                "borderColor": "hsla(120, 52%, 48%, 1)",
+              },
+              undefined,
+            ]
+          }
+        />
+      </TouchableWithoutFeedback>
+    </AnimatedComponent>
+  </View>
+</View>
+`;
 
 exports[`ArcadeButton Snapshot 2 should match 1`] = `
-ShallowWrapper {
-  "length": 1,
-  Symbol(enzyme.__root__): [Circular],
-  Symbol(enzyme.__unrendered__): <ArcadeButton
-    color="hsla(120, 52%, 48%, 1)"
-  />,
-  Symbol(enzyme.__renderer__): Object {
-    "batchedUpdates": [Function],
-    "getNode": [Function],
-    "render": [Function],
-    "simulateEvent": [Function],
-    "unmount": [Function],
-  },
-  Symbol(enzyme.__node__): Object {
-    "instance": null,
-    "key": undefined,
-    "nodeType": "class",
-    "props": Object {
-      "children": Array [
-        <View
-          style={85}
+<ArcadeButton
+  color="hsla(120, 52%, 48%, 1)"
+  disabled={true}
+  onDisabledOut={[Function]}
+  onPressIn={[Function]}
+  onPressOut={[Function]}
+>
+  <View
+    style={81}
+  >
+    <div
+      className="rn-alignItems-1awozwy rn-borderTopStyle-1efd50x rn-borderRightStyle-14skgim rn-borderBottomStyle-rull8r rn-borderLeftStyle-mm0ijv rn-borderTopWidth-13yce4e rn-borderRightWidth-fnigne rn-borderBottomWidth-ndvcnb rn-borderLeftWidth-gxnn5r rn-boxSizing-deolkf rn-display-6koalj rn-flexShrink-1qe8dj5 rn-flexBasis-1mlwlqe rn-flexDirection-eqz5dr rn-height-9zvdko rn-marginTop-1mnahxq rn-marginRight-61z16t rn-marginBottom-p1pxzi rn-marginLeft-11wrixw rn-minHeight-ifefl9 rn-minWidth-bcqeeo rn-paddingTop-wk8lta rn-paddingRight-9aemit rn-paddingBottom-1mdbw0j rn-paddingLeft-gy4na3 rn-position-bnwqim rn-top-14eup4l rn-width-1w88a7h rn-zIndex-1lgpqti"
+    >
+      <View
+        style={87}
+      >
+        <div
+          className="rn-alignItems-1oszu61 rn-borderTopStyle-1efd50x rn-borderRightStyle-14skgim rn-borderBottomStyle-rull8r rn-borderLeftStyle-mm0ijv rn-borderTopWidth-13yce4e rn-borderRightWidth-fnigne rn-borderBottomWidth-ndvcnb rn-borderLeftWidth-gxnn5r rn-boxSizing-deolkf rn-display-6koalj rn-flexShrink-1qe8dj5 rn-flexBasis-1mlwlqe rn-flexDirection-eqz5dr rn-marginTop-1mnahxq rn-marginRight-61z16t rn-marginLeft-11wrixw rn-marginBottom-1awrsvh rn-minHeight-ifefl9 rn-minWidth-bcqeeo rn-paddingTop-wk8lta rn-paddingRight-9aemit rn-paddingBottom-1mdbw0j rn-paddingLeft-gy4na3 rn-position-bnwqim rn-zIndex-1lgpqti"
         >
           <View
             style={
               Array [
-                90,
-                undefined,
+                92,
+                80,
               ]
             }
-          />
-          <View
-            style={
-              Array [
-                87,
-                Object {
-                  "backgroundColor": "hsla(120, 52%, 48%, 1)",
-                },
-                undefined,
-              ]
-            }
-          />
+          >
+            <div
+              className="rn-alignItems-1oszu61 rn-backgroundColor-xpb99w rn-borderTopLeftRadius-potn6v rn-borderTopRightRadius-1ppn8gy rn-borderBottomRightRadius-mbeot9 rn-borderBottomLeftRadius-17pa04l rn-borderTopStyle-1efd50x rn-borderRightStyle-14skgim rn-borderBottomStyle-rull8r rn-borderLeftStyle-mm0ijv rn-borderTopWidth-13yce4e rn-borderRightWidth-fnigne rn-borderBottomWidth-ndvcnb rn-borderLeftWidth-gxnn5r rn-boxSizing-deolkf rn-display-6koalj rn-flexShrink-1qe8dj5 rn-flexBasis-1mlwlqe rn-flexDirection-eqz5dr rn-height-9zvdko rn-left-1nj16ve rn-marginTop-1mnahxq rn-marginRight-61z16t rn-marginBottom-p1pxzi rn-marginLeft-11wrixw rn-minHeight-ifefl9 rn-minWidth-bcqeeo rn-opacity-5m1il8 rn-paddingTop-wk8lta rn-paddingRight-9aemit rn-paddingBottom-1mdbw0j rn-paddingLeft-gy4na3 rn-position-u8s1d rn-top-18nhz7w rn-width-1w88a7h rn-zIndex-1lgpqti"
+            />
+          </View>
           <View
             style={
               Array [
                 89,
-                undefined,
-              ]
-            }
-          />
-          <View
-            style={
-              Array [
-                86,
                 Object {
                   "backgroundColor": "hsla(120, 52%, 48%, 1)",
                 },
-                undefined,
+                77,
               ]
             }
-          />
+          >
+            <div
+              className="rn-alignItems-1oszu61 rn-backgroundColor-tsm7uf rn-borderTopColor-9chagg rn-borderRightColor-dhcvbo rn-borderBottomColor-aze7js rn-borderLeftColor-uq5j08 rn-borderTopLeftRadius-12r24e5 rn-borderTopRightRadius-12he9u2 rn-borderBottomRightRadius-1iofnf8 rn-borderBottomLeftRadius-13c4fz4 rn-borderTopStyle-1efd50x rn-borderRightStyle-14skgim rn-borderBottomStyle-rull8r rn-borderLeftStyle-mm0ijv rn-borderTopWidth-13yce4e rn-borderRightWidth-fnigne rn-borderBottomWidth-ndvcnb rn-borderLeftWidth-gxnn5r rn-boxSizing-deolkf rn-display-6koalj rn-flexShrink-1qe8dj5 rn-flexBasis-1mlwlqe rn-flexDirection-eqz5dr rn-height-4d76ec rn-marginTop-1mnahxq rn-marginRight-61z16t rn-marginBottom-p1pxzi rn-marginLeft-11wrixw rn-minHeight-ifefl9 rn-minWidth-bcqeeo rn-paddingTop-wk8lta rn-paddingRight-9aemit rn-paddingBottom-1mdbw0j rn-paddingLeft-gy4na3 rn-position-u8s1d rn-top-1yxedwg rn-width-l0gwng rn-zIndex-1lgpqti"
+            />
+          </View>
+          <View
+            style={
+              Array [
+                91,
+                79,
+              ]
+            }
+          >
+            <div
+              className="rn-alignItems-1oszu61 rn-backgroundColor-19r378u rn-borderTopLeftRadius-12r24e5 rn-borderTopRightRadius-12he9u2 rn-borderBottomRightRadius-1iofnf8 rn-borderBottomLeftRadius-13c4fz4 rn-borderTopStyle-1efd50x rn-borderRightStyle-14skgim rn-borderBottomStyle-rull8r rn-borderLeftStyle-mm0ijv rn-borderTopWidth-13yce4e rn-borderRightWidth-fnigne rn-borderBottomWidth-ndvcnb rn-borderLeftWidth-gxnn5r rn-boxSizing-deolkf rn-display-6koalj rn-flexShrink-1qe8dj5 rn-flexBasis-1mlwlqe rn-flexDirection-eqz5dr rn-height-4d76ec rn-marginTop-1mnahxq rn-marginRight-61z16t rn-marginBottom-p1pxzi rn-marginLeft-11wrixw rn-minHeight-ifefl9 rn-minWidth-bcqeeo rn-paddingTop-wk8lta rn-paddingRight-9aemit rn-paddingBottom-1mdbw0j rn-paddingLeft-gy4na3 rn-position-u8s1d rn-top-1yxedwg rn-width-l0gwng rn-zIndex-1lgpqti"
+            />
+          </View>
           <View
             style={
               Array [
                 88,
+                Object {
+                  "backgroundColor": "hsla(120, 52%, 48%, 1)",
+                },
+                77,
               ]
             }
-          />
-        </View>,
-        <View
-          style={80}
+          >
+            <div
+              className="rn-alignItems-1oszu61 rn-backgroundColor-tsm7uf rn-borderTopColor-9chagg rn-borderRightColor-dhcvbo rn-borderBottomColor-aze7js rn-borderLeftColor-uq5j08 rn-borderTopLeftRadius-12r24e5 rn-borderTopRightRadius-12he9u2 rn-borderBottomRightRadius-1iofnf8 rn-borderBottomLeftRadius-13c4fz4 rn-borderTopStyle-1efd50x rn-borderRightStyle-14skgim rn-borderBottomStyle-rull8r rn-borderLeftStyle-mm0ijv rn-borderTopWidth-5kkj8d rn-borderRightWidth-13l2t4g rn-borderBottomWidth-qklmqi rn-borderLeftWidth-1ljd8xs rn-boxSizing-deolkf rn-display-6koalj rn-flexShrink-1qe8dj5 rn-flexBasis-1mlwlqe rn-flexDirection-eqz5dr rn-height-4d76ec rn-marginRight-61z16t rn-marginBottom-p1pxzi rn-marginLeft-11wrixw rn-marginTop-1g94qm0 rn-minHeight-ifefl9 rn-minWidth-bcqeeo rn-paddingTop-wk8lta rn-paddingRight-9aemit rn-paddingBottom-1mdbw0j rn-paddingLeft-gy4na3 rn-position-bnwqim rn-width-l0gwng rn-zIndex-1lgpqti"
+            />
+          </View>
+          <View
+            style={
+              Array [
+                90,
+              ]
+            }
+          >
+            <div
+              className="rn-alignItems-1oszu61 rn-backgroundColor-1x31b7q rn-borderTopLeftRadius-12r24e5 rn-borderTopRightRadius-12he9u2 rn-borderBottomRightRadius-1iofnf8 rn-borderBottomLeftRadius-13c4fz4 rn-borderTopStyle-1efd50x rn-borderRightStyle-14skgim rn-borderBottomStyle-rull8r rn-borderLeftStyle-mm0ijv rn-borderTopWidth-13yce4e rn-borderRightWidth-fnigne rn-borderBottomWidth-ndvcnb rn-borderLeftWidth-gxnn5r rn-boxSizing-deolkf rn-display-6koalj rn-flexShrink-1qe8dj5 rn-flexBasis-1mlwlqe rn-flexDirection-eqz5dr rn-height-4d76ec rn-marginRight-61z16t rn-marginBottom-p1pxzi rn-marginLeft-11wrixw rn-marginTop-1g94qm0 rn-minHeight-ifefl9 rn-minWidth-bcqeeo rn-paddingTop-wk8lta rn-paddingRight-9aemit rn-paddingBottom-1mdbw0j rn-paddingLeft-gy4na3 rn-position-u8s1d rn-width-l0gwng rn-zIndex-1lgpqti"
+            />
+          </View>
+        </div>
+      </View>
+      <View
+        style={82}
+      >
+        <div
+          className="rn-alignItems-1oszu61 rn-borderTopStyle-1efd50x rn-borderRightStyle-14skgim rn-borderBottomStyle-rull8r rn-borderLeftStyle-mm0ijv rn-borderTopWidth-13yce4e rn-borderRightWidth-fnigne rn-borderBottomWidth-ndvcnb rn-borderLeftWidth-gxnn5r rn-boxSizing-deolkf rn-display-6koalj rn-flexShrink-1qe8dj5 rn-flexBasis-1mlwlqe rn-flexDirection-eqz5dr rn-marginTop-1mnahxq rn-marginRight-61z16t rn-marginBottom-p1pxzi rn-marginLeft-11wrixw rn-minHeight-ifefl9 rn-minWidth-bcqeeo rn-paddingTop-wk8lta rn-paddingRight-9aemit rn-paddingBottom-1mdbw0j rn-paddingLeft-gy4na3 rn-position-bnwqim rn-top-18nhz7w rn-zIndex-1lgpqti"
         >
           <View
             style={
               Array [
-                82,
-                undefined,
+                84,
+                78,
               ]
             }
-          />
+          >
+            <div
+              className="rn-alignItems-1oszu61 rn-backgroundColor-19r378u rn-borderTopColor-1nf8b0z rn-borderRightColor-18xqspc rn-borderBottomColor-14qoljl rn-borderLeftColor-js2eg1 rn-borderTopLeftRadius-w87uvk rn-borderTopRightRadius-yunqu1 rn-borderBottomRightRadius-74vylg rn-borderBottomLeftRadius-1syq735 rn-borderTopStyle-1efd50x rn-borderRightStyle-14skgim rn-borderBottomStyle-rull8r rn-borderLeftStyle-mm0ijv rn-borderTopWidth-5kkj8d rn-borderRightWidth-13l2t4g rn-borderBottomWidth-qklmqi rn-borderLeftWidth-1ljd8xs rn-boxSizing-deolkf rn-display-6koalj rn-flexShrink-1qe8dj5 rn-flexBasis-1mlwlqe rn-flexDirection-eqz5dr rn-height-7r4507 rn-marginRight-61z16t rn-marginBottom-p1pxzi rn-marginLeft-11wrixw rn-marginTop-100vyta rn-minHeight-ifefl9 rn-minWidth-bcqeeo rn-paddingTop-wk8lta rn-paddingRight-9aemit rn-paddingBottom-1mdbw0j rn-paddingLeft-gy4na3 rn-position-u8s1d rn-width-1iadsmv rn-zIndex-1lgpqti"
+            />
+          </View>
           <AnimatedComponent
             style={
               Object {
@@ -1085,200 +334,6 @@ ShallowWrapper {
           >
             <View
               style={
-                Array [
-                  83,
-                  undefined,
-                ]
-              }
-            />
-            <Touchable
-              activeValue={1}
-              delayLongPress={500}
-              delayPressIn={0}
-              delayPressOut={100}
-              onPressIn={[Function]}
-              onPressOut={[Function]}
-              press={0}
-              pressDuration={150}
-              pressRetentionOffset={
-                Object {
-                  "bottom": 30,
-                  "left": 20,
-                  "right": 20,
-                  "top": 20,
-                }
-              }
-            >
-              <View
-                style={
-                  Array [
-                    81,
-                    Object {
-                      "backgroundColor": "hsla(120, 52%, 48%, 1)",
-                      "borderColor": "hsla(120, 52%, 48%, 1)",
-                    },
-                    undefined,
-                  ]
-                }
-              />
-            </Touchable>
-          </AnimatedComponent>
-        </View>,
-      ],
-      "style": 79,
-    },
-    "ref": null,
-    "rendered": Array [
-      Object {
-        "instance": null,
-        "key": undefined,
-        "nodeType": "class",
-        "props": Object {
-          "children": Array [
-            <View
-              style={
-                Array [
-                  90,
-                  undefined,
-                ]
-              }
-            />,
-            <View
-              style={
-                Array [
-                  87,
-                  Object {
-                    "backgroundColor": "hsla(120, 52%, 48%, 1)",
-                  },
-                  undefined,
-                ]
-              }
-            />,
-            <View
-              style={
-                Array [
-                  89,
-                  undefined,
-                ]
-              }
-            />,
-            <View
-              style={
-                Array [
-                  86,
-                  Object {
-                    "backgroundColor": "hsla(120, 52%, 48%, 1)",
-                  },
-                  undefined,
-                ]
-              }
-            />,
-            <View
-              style={
-                Array [
-                  88,
-                ]
-              }
-            />,
-          ],
-          "style": 85,
-        },
-        "ref": null,
-        "rendered": Array [
-          Object {
-            "instance": null,
-            "key": undefined,
-            "nodeType": "class",
-            "props": Object {
-              "style": Array [
-                90,
-                undefined,
-              ],
-            },
-            "ref": null,
-            "rendered": null,
-            "type": [Function],
-          },
-          Object {
-            "instance": null,
-            "key": undefined,
-            "nodeType": "class",
-            "props": Object {
-              "style": Array [
-                87,
-                Object {
-                  "backgroundColor": "hsla(120, 52%, 48%, 1)",
-                },
-                undefined,
-              ],
-            },
-            "ref": null,
-            "rendered": null,
-            "type": [Function],
-          },
-          Object {
-            "instance": null,
-            "key": undefined,
-            "nodeType": "class",
-            "props": Object {
-              "style": Array [
-                89,
-                undefined,
-              ],
-            },
-            "ref": null,
-            "rendered": null,
-            "type": [Function],
-          },
-          Object {
-            "instance": null,
-            "key": undefined,
-            "nodeType": "class",
-            "props": Object {
-              "style": Array [
-                86,
-                Object {
-                  "backgroundColor": "hsla(120, 52%, 48%, 1)",
-                },
-                undefined,
-              ],
-            },
-            "ref": null,
-            "rendered": null,
-            "type": [Function],
-          },
-          Object {
-            "instance": null,
-            "key": undefined,
-            "nodeType": "class",
-            "props": Object {
-              "style": Array [
-                88,
-              ],
-            },
-            "ref": null,
-            "rendered": null,
-            "type": [Function],
-          },
-        ],
-        "type": [Function],
-      },
-      Object {
-        "instance": null,
-        "key": undefined,
-        "nodeType": "class",
-        "props": Object {
-          "children": Array [
-            <View
-              style={
-                Array [
-                  82,
-                  undefined,
-                ]
-              }
-            />,
-            <AnimatedComponent
-              style={
                 Object {
                   "opacity": 1,
                   "transform": Array [
@@ -1290,483 +345,13 @@ ShallowWrapper {
                 }
               }
             >
-              <View
-                style={
-                  Array [
-                    83,
-                    undefined,
-                  ]
-                }
-              />
-              <Touchable
-                activeValue={1}
-                delayLongPress={500}
-                delayPressIn={0}
-                delayPressOut={100}
-                onPressIn={[Function]}
-                onPressOut={[Function]}
-                press={0}
-                pressDuration={150}
-                pressRetentionOffset={
-                  Object {
-                    "bottom": 30,
-                    "left": 20,
-                    "right": 20,
-                    "top": 20,
-                  }
-                }
-              >
-                <View
-                  style={
-                    Array [
-                      81,
-                      Object {
-                        "backgroundColor": "hsla(120, 52%, 48%, 1)",
-                        "borderColor": "hsla(120, 52%, 48%, 1)",
-                      },
-                      undefined,
-                    ]
-                  }
-                />
-              </Touchable>
-            </AnimatedComponent>,
-          ],
-          "style": 80,
-        },
-        "ref": null,
-        "rendered": Array [
-          Object {
-            "instance": null,
-            "key": undefined,
-            "nodeType": "class",
-            "props": Object {
-              "style": Array [
-                82,
-                undefined,
-              ],
-            },
-            "ref": null,
-            "rendered": null,
-            "type": [Function],
-          },
-          Object {
-            "instance": null,
-            "key": undefined,
-            "nodeType": "class",
-            "props": Object {
-              "children": Array [
-                <View
-                  style={
-                    Array [
-                      83,
-                      undefined,
-                    ]
-                  }
-                />,
-                <Touchable
-                  activeValue={1}
-                  delayLongPress={500}
-                  delayPressIn={0}
-                  delayPressOut={100}
-                  onPressIn={[Function]}
-                  onPressOut={[Function]}
-                  press={0}
-                  pressDuration={150}
-                  pressRetentionOffset={
-                    Object {
-                      "bottom": 30,
-                      "left": 20,
-                      "right": 20,
-                      "top": 20,
-                    }
-                  }
-                >
-                  <View
-                    style={
-                      Array [
-                        81,
-                        Object {
-                          "backgroundColor": "hsla(120, 52%, 48%, 1)",
-                          "borderColor": "hsla(120, 52%, 48%, 1)",
-                        },
-                        undefined,
-                      ]
-                    }
-                  />
-                </Touchable>,
-              ],
-              "style": Object {
-                "opacity": 1,
-                "transform": Array [
-                  Object {
-                    "translateY": 0,
-                  },
-                ],
-                "zIndex": 1,
-              },
-            },
-            "ref": null,
-            "rendered": Array [
-              Object {
-                "instance": null,
-                "key": undefined,
-                "nodeType": "class",
-                "props": Object {
-                  "style": Array [
-                    83,
-                    undefined,
-                  ],
-                },
-                "ref": null,
-                "rendered": null,
-                "type": [Function],
-              },
-              Object {
-                "instance": null,
-                "key": undefined,
-                "nodeType": "class",
-                "props": Object {
-                  "activeValue": 1,
-                  "children": <View
-                    style={
-                      Array [
-                        81,
-                        Object {
-                          "backgroundColor": "hsla(120, 52%, 48%, 1)",
-                          "borderColor": "hsla(120, 52%, 48%, 1)",
-                        },
-                        undefined,
-                      ]
-                    }
-                  />,
-                  "delayLongPress": 500,
-                  "delayPressIn": 0,
-                  "delayPressOut": 100,
-                  "onPressIn": [Function],
-                  "onPressOut": [Function],
-                  "press": 0,
-                  "pressDuration": 150,
-                  "pressRetentionOffset": Object {
-                    "bottom": 30,
-                    "left": 20,
-                    "right": 20,
-                    "top": 20,
-                  },
-                },
-                "ref": null,
-                "rendered": Object {
-                  "instance": null,
-                  "key": undefined,
-                  "nodeType": "class",
-                  "props": Object {
-                    "children": undefined,
-                    "style": Array [
-                      81,
-                      Object {
-                        "backgroundColor": "hsla(120, 52%, 48%, 1)",
-                        "borderColor": "hsla(120, 52%, 48%, 1)",
-                      },
-                      undefined,
-                    ],
-                  },
-                  "ref": null,
-                  "rendered": null,
-                  "type": [Function],
-                },
-                "type": [Function],
-              },
-            ],
-            "type": [Function],
-          },
-        ],
-        "type": [Function],
-      },
-    ],
-    "type": [Function],
-  },
-  Symbol(enzyme.__nodes__): Array [
-    Object {
-      "instance": null,
-      "key": undefined,
-      "nodeType": "class",
-      "props": Object {
-        "children": Array [
-          <View
-            style={85}
-          >
-            <View
-              style={
-                Array [
-                  90,
-                  undefined,
-                ]
-              }
-            />
-            <View
-              style={
-                Array [
-                  87,
-                  Object {
-                    "backgroundColor": "hsla(120, 52%, 48%, 1)",
-                  },
-                  undefined,
-                ]
-              }
-            />
-            <View
-              style={
-                Array [
-                  89,
-                  undefined,
-                ]
-              }
-            />
-            <View
-              style={
-                Array [
-                  86,
-                  Object {
-                    "backgroundColor": "hsla(120, 52%, 48%, 1)",
-                  },
-                  undefined,
-                ]
-              }
-            />
-            <View
-              style={
-                Array [
-                  88,
-                ]
-              }
-            />
-          </View>,
-          <View
-            style={80}
-          >
-            <View
-              style={
-                Array [
-                  82,
-                  undefined,
-                ]
-              }
-            />
-            <AnimatedComponent
-              style={
-                Object {
-                  "opacity": 1,
-                  "transform": Array [
-                    Object {
-                      "translateY": 0,
-                    },
-                  ],
-                  "zIndex": 1,
-                }
-              }
-            >
-              <View
-                style={
-                  Array [
-                    83,
-                    undefined,
-                  ]
-                }
-              />
-              <Touchable
-                activeValue={1}
-                delayLongPress={500}
-                delayPressIn={0}
-                delayPressOut={100}
-                onPressIn={[Function]}
-                onPressOut={[Function]}
-                press={0}
-                pressDuration={150}
-                pressRetentionOffset={
-                  Object {
-                    "bottom": 30,
-                    "left": 20,
-                    "right": 20,
-                    "top": 20,
-                  }
-                }
-              >
-                <View
-                  style={
-                    Array [
-                      81,
-                      Object {
-                        "backgroundColor": "hsla(120, 52%, 48%, 1)",
-                        "borderColor": "hsla(120, 52%, 48%, 1)",
-                      },
-                      undefined,
-                    ]
-                  }
-                />
-              </Touchable>
-            </AnimatedComponent>
-          </View>,
-        ],
-        "style": 79,
-      },
-      "ref": null,
-      "rendered": Array [
-        Object {
-          "instance": null,
-          "key": undefined,
-          "nodeType": "class",
-          "props": Object {
-            "children": Array [
-              <View
-                style={
-                  Array [
-                    90,
-                    undefined,
-                  ]
-                }
-              />,
-              <View
-                style={
-                  Array [
-                    87,
-                    Object {
-                      "backgroundColor": "hsla(120, 52%, 48%, 1)",
-                    },
-                    undefined,
-                  ]
-                }
-              />,
-              <View
-                style={
-                  Array [
-                    89,
-                    undefined,
-                  ]
-                }
-              />,
-              <View
-                style={
-                  Array [
-                    86,
-                    Object {
-                      "backgroundColor": "hsla(120, 52%, 48%, 1)",
-                    },
-                    undefined,
-                  ]
-                }
-              />,
-              <View
-                style={
-                  Array [
-                    88,
-                  ]
-                }
-              />,
-            ],
-            "style": 85,
-          },
-          "ref": null,
-          "rendered": Array [
-            Object {
-              "instance": null,
-              "key": undefined,
-              "nodeType": "class",
-              "props": Object {
-                "style": Array [
-                  90,
-                  undefined,
-                ],
-              },
-              "ref": null,
-              "rendered": null,
-              "type": [Function],
-            },
-            Object {
-              "instance": null,
-              "key": undefined,
-              "nodeType": "class",
-              "props": Object {
-                "style": Array [
-                  87,
-                  Object {
-                    "backgroundColor": "hsla(120, 52%, 48%, 1)",
-                  },
-                  undefined,
-                ],
-              },
-              "ref": null,
-              "rendered": null,
-              "type": [Function],
-            },
-            Object {
-              "instance": null,
-              "key": undefined,
-              "nodeType": "class",
-              "props": Object {
-                "style": Array [
-                  89,
-                  undefined,
-                ],
-              },
-              "ref": null,
-              "rendered": null,
-              "type": [Function],
-            },
-            Object {
-              "instance": null,
-              "key": undefined,
-              "nodeType": "class",
-              "props": Object {
-                "style": Array [
-                  86,
-                  Object {
-                    "backgroundColor": "hsla(120, 52%, 48%, 1)",
-                  },
-                  undefined,
-                ],
-              },
-              "ref": null,
-              "rendered": null,
-              "type": [Function],
-            },
-            Object {
-              "instance": null,
-              "key": undefined,
-              "nodeType": "class",
-              "props": Object {
-                "style": Array [
-                  88,
-                ],
-              },
-              "ref": null,
-              "rendered": null,
-              "type": [Function],
-            },
-          ],
-          "type": [Function],
-        },
-        Object {
-          "instance": null,
-          "key": undefined,
-          "nodeType": "class",
-          "props": Object {
-            "children": Array [
-              <View
-                style={
-                  Array [
-                    82,
-                    undefined,
-                  ]
-                }
-              />,
-              <AnimatedComponent
+              <div
+                className="rn-alignItems-1oszu61 rn-borderTopStyle-1efd50x rn-borderRightStyle-14skgim rn-borderBottomStyle-rull8r rn-borderLeftStyle-mm0ijv rn-borderTopWidth-13yce4e rn-borderRightWidth-fnigne rn-borderBottomWidth-ndvcnb rn-borderLeftWidth-gxnn5r rn-boxSizing-deolkf rn-display-6koalj rn-flexShrink-1qe8dj5 rn-flexBasis-1mlwlqe rn-flexDirection-eqz5dr rn-marginTop-1mnahxq rn-marginRight-61z16t rn-marginBottom-p1pxzi rn-marginLeft-11wrixw rn-minHeight-ifefl9 rn-minWidth-bcqeeo rn-paddingTop-wk8lta rn-paddingRight-9aemit rn-paddingBottom-1mdbw0j rn-paddingLeft-gy4na3 rn-position-bnwqim"
                 style={
                   Object {
+                    "WebkitTransform": "translateY(0px)",
                     "opacity": 1,
-                    "transform": Array [
-                      Object {
-                        "translateY": 0,
-                      },
-                    ],
+                    "transform": "translateY(0px)",
                     "zIndex": 1,
                   }
                 }
@@ -1774,109 +359,196 @@ ShallowWrapper {
                 <View
                   style={
                     Array [
-                      83,
-                      undefined,
+                      85,
+                      76,
                     ]
                   }
-                />
-                <Touchable
-                  activeValue={1}
-                  delayLongPress={500}
-                  delayPressIn={0}
-                  delayPressOut={100}
+                >
+                  <div
+                    className="rn-alignItems-1oszu61 rn-backgroundColor-xpb99w rn-borderTopLeftRadius-w87uvk rn-borderTopRightRadius-yunqu1 rn-borderBottomRightRadius-74vylg rn-borderBottomLeftRadius-1syq735 rn-borderTopStyle-1efd50x rn-borderRightStyle-14skgim rn-borderBottomStyle-rull8r rn-borderLeftStyle-mm0ijv rn-borderTopWidth-13yce4e rn-borderRightWidth-fnigne rn-borderBottomWidth-ndvcnb rn-borderLeftWidth-gxnn5r rn-boxSizing-deolkf rn-display-6koalj rn-flexShrink-1qe8dj5 rn-flexBasis-1mlwlqe rn-flexDirection-eqz5dr rn-height-7r4507 rn-marginRight-61z16t rn-marginBottom-p1pxzi rn-marginLeft-11wrixw rn-marginTop-1cvj4g8 rn-minHeight-ifefl9 rn-minWidth-bcqeeo rn-paddingTop-wk8lta rn-paddingRight-9aemit rn-paddingBottom-1mdbw0j rn-paddingLeft-gy4na3 rn-position-u8s1d rn-width-1iadsmv rn-zIndex-1lgpqti"
+                  />
+                </View>
+                <TouchableWithoutFeedback
                   onPressIn={[Function]}
                   onPressOut={[Function]}
-                  press={0}
-                  pressDuration={150}
-                  pressRetentionOffset={
-                    Object {
-                      "bottom": 30,
-                      "left": 20,
-                      "right": 20,
-                      "top": 20,
-                    }
-                  }
                 >
                   <View
+                    accessible={true}
+                    onKeyDown={[Function]}
+                    onKeyUp={[Function]}
+                    onResponderGrant={[Function]}
+                    onResponderMove={[Function]}
+                    onResponderRelease={[Function]}
+                    onResponderTerminate={[Function]}
+                    onResponderTerminationRequest={[Function]}
+                    onStartShouldSetResponder={[Function]}
                     style={
                       Array [
-                        81,
-                        Object {
-                          "backgroundColor": "hsla(120, 52%, 48%, 1)",
-                          "borderColor": "hsla(120, 52%, 48%, 1)",
-                        },
-                        undefined,
-                      ]
-                    }
-                  />
-                </Touchable>
-              </AnimatedComponent>,
-            ],
-            "style": 80,
-          },
-          "ref": null,
-          "rendered": Array [
-            Object {
-              "instance": null,
-              "key": undefined,
-              "nodeType": "class",
-              "props": Object {
-                "style": Array [
-                  82,
-                  undefined,
-                ],
-              },
-              "ref": null,
-              "rendered": null,
-              "type": [Function],
-            },
-            Object {
-              "instance": null,
-              "key": undefined,
-              "nodeType": "class",
-              "props": Object {
-                "children": Array [
-                  <View
-                    style={
-                      Array [
-                        83,
-                        undefined,
-                      ]
-                    }
-                  />,
-                  <Touchable
-                    activeValue={1}
-                    delayLongPress={500}
-                    delayPressIn={0}
-                    delayPressOut={100}
-                    onPressIn={[Function]}
-                    onPressOut={[Function]}
-                    press={0}
-                    pressDuration={150}
-                    pressRetentionOffset={
-                      Object {
-                        "bottom": 30,
-                        "left": 20,
-                        "right": 20,
-                        "top": 20,
-                      }
-                    }
-                  >
-                    <View
-                      style={
+                        39,
                         Array [
-                          81,
+                          83,
                           Object {
                             "backgroundColor": "hsla(120, 52%, 48%, 1)",
                             "borderColor": "hsla(120, 52%, 48%, 1)",
                           },
-                          undefined,
-                        ]
-                      }
+                          75,
+                        ],
+                      ]
+                    }
+                  >
+                    <div
+                      className="rn-alignItems-1awozwy rn-backgroundColor-tsm7uf rn-borderTopColor-gv7t1l rn-borderRightColor-1itbhdy rn-borderBottomColor-1u5ghgs rn-borderLeftColor-592z09 rn-borderTopLeftRadius-w87uvk rn-borderTopRightRadius-yunqu1 rn-borderBottomRightRadius-74vylg rn-borderBottomLeftRadius-1syq735 rn-borderTopStyle-1efd50x rn-borderRightStyle-14skgim rn-borderBottomStyle-rull8r rn-borderLeftStyle-mm0ijv rn-borderTopWidth-5kkj8d rn-borderRightWidth-13l2t4g rn-borderBottomWidth-qklmqi rn-borderLeftWidth-1ljd8xs rn-boxSizing-deolkf rn-cursor-1loqt21 rn-display-6koalj rn-flexShrink-1qe8dj5 rn-flexBasis-1mlwlqe rn-flexDirection-eqz5dr rn-height-7r4507 rn-justifyContent-1777fci rn-marginRight-61z16t rn-marginBottom-p1pxzi rn-marginLeft-11wrixw rn-marginTop-19qrga8 rn-minHeight-ifefl9 rn-minWidth-bcqeeo rn-paddingTop-wk8lta rn-paddingRight-9aemit rn-paddingBottom-1mdbw0j rn-paddingLeft-gy4na3 rn-position-bnwqim rn-touchAction-1otgn73 rn-width-1iadsmv rn-zIndex-1lgpqti"
+                      data-focusable={true}
+                      onKeyDown={[Function]}
+                      onKeyUp={[Function]}
+                      onResponderGrant={[Function]}
+                      onResponderMove={[Function]}
+                      onResponderRelease={[Function]}
+                      onResponderTerminate={[Function]}
+                      onResponderTerminationRequest={[Function]}
+                      onStartShouldSetResponder={[Function]}
+                      tabIndex="0"
                     />
-                  </Touchable>,
+                  </View>
+                </TouchableWithoutFeedback>
+              </div>
+            </View>
+          </AnimatedComponent>
+        </div>
+      </View>
+    </div>
+  </View>
+</ArcadeButton>
+`;
+
+exports[`ArcadeButton Snapshot 3 should match 1`] = `
+<ArcadeButton
+  color="hsla(120, 52%, 48%, 1)"
+  onPressIn={[Function]}
+>
+  <View
+    style={81}
+  >
+    <div
+      className="rn-alignItems-1awozwy rn-borderTopStyle-1efd50x rn-borderRightStyle-14skgim rn-borderBottomStyle-rull8r rn-borderLeftStyle-mm0ijv rn-borderTopWidth-13yce4e rn-borderRightWidth-fnigne rn-borderBottomWidth-ndvcnb rn-borderLeftWidth-gxnn5r rn-boxSizing-deolkf rn-display-6koalj rn-flexShrink-1qe8dj5 rn-flexBasis-1mlwlqe rn-flexDirection-eqz5dr rn-height-9zvdko rn-marginTop-1mnahxq rn-marginRight-61z16t rn-marginBottom-p1pxzi rn-marginLeft-11wrixw rn-minHeight-ifefl9 rn-minWidth-bcqeeo rn-paddingTop-wk8lta rn-paddingRight-9aemit rn-paddingBottom-1mdbw0j rn-paddingLeft-gy4na3 rn-position-bnwqim rn-top-14eup4l rn-width-1w88a7h rn-zIndex-1lgpqti"
+    >
+      <View
+        style={87}
+      >
+        <div
+          className="rn-alignItems-1oszu61 rn-borderTopStyle-1efd50x rn-borderRightStyle-14skgim rn-borderBottomStyle-rull8r rn-borderLeftStyle-mm0ijv rn-borderTopWidth-13yce4e rn-borderRightWidth-fnigne rn-borderBottomWidth-ndvcnb rn-borderLeftWidth-gxnn5r rn-boxSizing-deolkf rn-display-6koalj rn-flexShrink-1qe8dj5 rn-flexBasis-1mlwlqe rn-flexDirection-eqz5dr rn-marginTop-1mnahxq rn-marginRight-61z16t rn-marginLeft-11wrixw rn-marginBottom-1awrsvh rn-minHeight-ifefl9 rn-minWidth-bcqeeo rn-paddingTop-wk8lta rn-paddingRight-9aemit rn-paddingBottom-1mdbw0j rn-paddingLeft-gy4na3 rn-position-bnwqim rn-zIndex-1lgpqti"
+        >
+          <View
+            style={
+              Array [
+                92,
+                undefined,
+              ]
+            }
+          >
+            <div
+              className="rn-alignItems-1oszu61 rn-backgroundColor-xpb99w rn-borderTopLeftRadius-potn6v rn-borderTopRightRadius-1ppn8gy rn-borderBottomRightRadius-mbeot9 rn-borderBottomLeftRadius-17pa04l rn-borderTopStyle-1efd50x rn-borderRightStyle-14skgim rn-borderBottomStyle-rull8r rn-borderLeftStyle-mm0ijv rn-borderTopWidth-13yce4e rn-borderRightWidth-fnigne rn-borderBottomWidth-ndvcnb rn-borderLeftWidth-gxnn5r rn-boxSizing-deolkf rn-display-6koalj rn-flexShrink-1qe8dj5 rn-flexBasis-1mlwlqe rn-flexDirection-eqz5dr rn-height-9zvdko rn-left-1nj16ve rn-marginTop-1mnahxq rn-marginRight-61z16t rn-marginBottom-p1pxzi rn-marginLeft-11wrixw rn-minHeight-ifefl9 rn-minWidth-bcqeeo rn-opacity-5m1il8 rn-paddingTop-wk8lta rn-paddingRight-9aemit rn-paddingBottom-1mdbw0j rn-paddingLeft-gy4na3 rn-position-u8s1d rn-top-18nhz7w rn-width-1w88a7h rn-zIndex-1lgpqti"
+            />
+          </View>
+          <View
+            style={
+              Array [
+                89,
+                Object {
+                  "backgroundColor": "hsla(120, 52%, 48%, 1)",
+                },
+                undefined,
+              ]
+            }
+          >
+            <div
+              className="rn-alignItems-1oszu61 rn-borderTopLeftRadius-12r24e5 rn-borderTopRightRadius-12he9u2 rn-borderBottomRightRadius-1iofnf8 rn-borderBottomLeftRadius-13c4fz4 rn-borderTopStyle-1efd50x rn-borderRightStyle-14skgim rn-borderBottomStyle-rull8r rn-borderLeftStyle-mm0ijv rn-borderTopWidth-13yce4e rn-borderRightWidth-fnigne rn-borderBottomWidth-ndvcnb rn-borderLeftWidth-gxnn5r rn-boxSizing-deolkf rn-display-6koalj rn-flexShrink-1qe8dj5 rn-flexBasis-1mlwlqe rn-flexDirection-eqz5dr rn-height-4d76ec rn-marginTop-1mnahxq rn-marginRight-61z16t rn-marginBottom-p1pxzi rn-marginLeft-11wrixw rn-minHeight-ifefl9 rn-minWidth-bcqeeo rn-paddingTop-wk8lta rn-paddingRight-9aemit rn-paddingBottom-1mdbw0j rn-paddingLeft-gy4na3 rn-position-u8s1d rn-top-1yxedwg rn-width-l0gwng rn-zIndex-1lgpqti"
+              style={
+                Object {
+                  "backgroundColor": "hsla(120, 52%, 48%, 1)",
+                }
+              }
+            />
+          </View>
+          <View
+            style={
+              Array [
+                91,
+                undefined,
+              ]
+            }
+          >
+            <div
+              className="rn-alignItems-1oszu61 rn-backgroundColor-1dpottv rn-borderTopLeftRadius-12r24e5 rn-borderTopRightRadius-12he9u2 rn-borderBottomRightRadius-1iofnf8 rn-borderBottomLeftRadius-13c4fz4 rn-borderTopStyle-1efd50x rn-borderRightStyle-14skgim rn-borderBottomStyle-rull8r rn-borderLeftStyle-mm0ijv rn-borderTopWidth-13yce4e rn-borderRightWidth-fnigne rn-borderBottomWidth-ndvcnb rn-borderLeftWidth-gxnn5r rn-boxSizing-deolkf rn-display-6koalj rn-flexShrink-1qe8dj5 rn-flexBasis-1mlwlqe rn-flexDirection-eqz5dr rn-height-4d76ec rn-marginTop-1mnahxq rn-marginRight-61z16t rn-marginBottom-p1pxzi rn-marginLeft-11wrixw rn-minHeight-ifefl9 rn-minWidth-bcqeeo rn-paddingTop-wk8lta rn-paddingRight-9aemit rn-paddingBottom-1mdbw0j rn-paddingLeft-gy4na3 rn-position-u8s1d rn-top-1yxedwg rn-width-l0gwng rn-zIndex-1lgpqti"
+            />
+          </View>
+          <View
+            style={
+              Array [
+                88,
+                Object {
+                  "backgroundColor": "hsla(120, 52%, 48%, 1)",
+                },
+                undefined,
+              ]
+            }
+          >
+            <div
+              className="rn-alignItems-1oszu61 rn-borderTopColor-1rnxi3i rn-borderRightColor-wbidcw rn-borderBottomColor-siupq4 rn-borderLeftColor-x59ly5 rn-borderTopLeftRadius-12r24e5 rn-borderTopRightRadius-12he9u2 rn-borderBottomRightRadius-1iofnf8 rn-borderBottomLeftRadius-13c4fz4 rn-borderTopStyle-1efd50x rn-borderRightStyle-14skgim rn-borderBottomStyle-rull8r rn-borderLeftStyle-mm0ijv rn-borderTopWidth-5kkj8d rn-borderRightWidth-13l2t4g rn-borderBottomWidth-qklmqi rn-borderLeftWidth-1ljd8xs rn-boxSizing-deolkf rn-display-6koalj rn-flexShrink-1qe8dj5 rn-flexBasis-1mlwlqe rn-flexDirection-eqz5dr rn-height-4d76ec rn-marginRight-61z16t rn-marginBottom-p1pxzi rn-marginLeft-11wrixw rn-marginTop-1g94qm0 rn-minHeight-ifefl9 rn-minWidth-bcqeeo rn-paddingTop-wk8lta rn-paddingRight-9aemit rn-paddingBottom-1mdbw0j rn-paddingLeft-gy4na3 rn-position-bnwqim rn-width-l0gwng rn-zIndex-1lgpqti"
+              style={
+                Object {
+                  "backgroundColor": "hsla(120, 52%, 48%, 1)",
+                }
+              }
+            />
+          </View>
+          <View
+            style={
+              Array [
+                90,
+              ]
+            }
+          >
+            <div
+              className="rn-alignItems-1oszu61 rn-backgroundColor-1x31b7q rn-borderTopLeftRadius-12r24e5 rn-borderTopRightRadius-12he9u2 rn-borderBottomRightRadius-1iofnf8 rn-borderBottomLeftRadius-13c4fz4 rn-borderTopStyle-1efd50x rn-borderRightStyle-14skgim rn-borderBottomStyle-rull8r rn-borderLeftStyle-mm0ijv rn-borderTopWidth-13yce4e rn-borderRightWidth-fnigne rn-borderBottomWidth-ndvcnb rn-borderLeftWidth-gxnn5r rn-boxSizing-deolkf rn-display-6koalj rn-flexShrink-1qe8dj5 rn-flexBasis-1mlwlqe rn-flexDirection-eqz5dr rn-height-4d76ec rn-marginRight-61z16t rn-marginBottom-p1pxzi rn-marginLeft-11wrixw rn-marginTop-1g94qm0 rn-minHeight-ifefl9 rn-minWidth-bcqeeo rn-paddingTop-wk8lta rn-paddingRight-9aemit rn-paddingBottom-1mdbw0j rn-paddingLeft-gy4na3 rn-position-u8s1d rn-width-l0gwng rn-zIndex-1lgpqti"
+            />
+          </View>
+        </div>
+      </View>
+      <View
+        style={82}
+      >
+        <div
+          className="rn-alignItems-1oszu61 rn-borderTopStyle-1efd50x rn-borderRightStyle-14skgim rn-borderBottomStyle-rull8r rn-borderLeftStyle-mm0ijv rn-borderTopWidth-13yce4e rn-borderRightWidth-fnigne rn-borderBottomWidth-ndvcnb rn-borderLeftWidth-gxnn5r rn-boxSizing-deolkf rn-display-6koalj rn-flexShrink-1qe8dj5 rn-flexBasis-1mlwlqe rn-flexDirection-eqz5dr rn-marginTop-1mnahxq rn-marginRight-61z16t rn-marginBottom-p1pxzi rn-marginLeft-11wrixw rn-minHeight-ifefl9 rn-minWidth-bcqeeo rn-paddingTop-wk8lta rn-paddingRight-9aemit rn-paddingBottom-1mdbw0j rn-paddingLeft-gy4na3 rn-position-bnwqim rn-top-18nhz7w rn-zIndex-1lgpqti"
+        >
+          <View
+            style={
+              Array [
+                84,
+                undefined,
+              ]
+            }
+          >
+            <div
+              className="rn-alignItems-1oszu61 rn-backgroundColor-1dpottv rn-borderTopColor-48c68v rn-borderRightColor-1qev2y0 rn-borderBottomColor-19sur4y rn-borderLeftColor-1utlcvg rn-borderTopLeftRadius-w87uvk rn-borderTopRightRadius-yunqu1 rn-borderBottomRightRadius-74vylg rn-borderBottomLeftRadius-1syq735 rn-borderTopStyle-1efd50x rn-borderRightStyle-14skgim rn-borderBottomStyle-rull8r rn-borderLeftStyle-mm0ijv rn-borderTopWidth-5kkj8d rn-borderRightWidth-13l2t4g rn-borderBottomWidth-qklmqi rn-borderLeftWidth-1ljd8xs rn-boxSizing-deolkf rn-display-6koalj rn-flexShrink-1qe8dj5 rn-flexBasis-1mlwlqe rn-flexDirection-eqz5dr rn-height-7r4507 rn-marginRight-61z16t rn-marginBottom-p1pxzi rn-marginLeft-11wrixw rn-marginTop-100vyta rn-minHeight-ifefl9 rn-minWidth-bcqeeo rn-paddingTop-wk8lta rn-paddingRight-9aemit rn-paddingBottom-1mdbw0j rn-paddingLeft-gy4na3 rn-position-u8s1d rn-width-1iadsmv rn-zIndex-1lgpqti"
+            />
+          </View>
+          <AnimatedComponent
+            style={
+              Object {
+                "opacity": 1,
+                "transform": Array [
+                  Object {
+                    "translateY": 0,
+                  },
                 ],
-                "style": Object {
+                "zIndex": 1,
+              }
+            }
+          >
+            <View
+              style={
+                Object {
                   "opacity": 1,
                   "transform": Array [
                     Object {
@@ -1884,96 +556,90 @@ ShallowWrapper {
                     },
                   ],
                   "zIndex": 1,
-                },
-              },
-              "ref": null,
-              "rendered": Array [
-                Object {
-                  "instance": null,
-                  "key": undefined,
-                  "nodeType": "class",
-                  "props": Object {
-                    "style": Array [
-                      83,
+                }
+              }
+            >
+              <div
+                className="rn-alignItems-1oszu61 rn-borderTopStyle-1efd50x rn-borderRightStyle-14skgim rn-borderBottomStyle-rull8r rn-borderLeftStyle-mm0ijv rn-borderTopWidth-13yce4e rn-borderRightWidth-fnigne rn-borderBottomWidth-ndvcnb rn-borderLeftWidth-gxnn5r rn-boxSizing-deolkf rn-display-6koalj rn-flexShrink-1qe8dj5 rn-flexBasis-1mlwlqe rn-flexDirection-eqz5dr rn-marginTop-1mnahxq rn-marginRight-61z16t rn-marginBottom-p1pxzi rn-marginLeft-11wrixw rn-minHeight-ifefl9 rn-minWidth-bcqeeo rn-paddingTop-wk8lta rn-paddingRight-9aemit rn-paddingBottom-1mdbw0j rn-paddingLeft-gy4na3 rn-position-bnwqim"
+                style={
+                  Object {
+                    "WebkitTransform": "translateY(0px)",
+                    "opacity": 1,
+                    "transform": "translateY(0px)",
+                    "zIndex": 1,
+                  }
+                }
+              >
+                <View
+                  style={
+                    Array [
+                      85,
                       undefined,
-                    ],
-                  },
-                  "ref": null,
-                  "rendered": null,
-                  "type": [Function],
-                },
-                Object {
-                  "instance": null,
-                  "key": undefined,
-                  "nodeType": "class",
-                  "props": Object {
-                    "activeValue": 1,
-                    "children": <View
-                      style={
+                    ]
+                  }
+                >
+                  <div
+                    className="rn-alignItems-1oszu61 rn-backgroundColor-mw4fk6 rn-borderTopLeftRadius-w87uvk rn-borderTopRightRadius-yunqu1 rn-borderBottomRightRadius-74vylg rn-borderBottomLeftRadius-1syq735 rn-borderTopStyle-1efd50x rn-borderRightStyle-14skgim rn-borderBottomStyle-rull8r rn-borderLeftStyle-mm0ijv rn-borderTopWidth-13yce4e rn-borderRightWidth-fnigne rn-borderBottomWidth-ndvcnb rn-borderLeftWidth-gxnn5r rn-boxSizing-deolkf rn-display-6koalj rn-flexShrink-1qe8dj5 rn-flexBasis-1mlwlqe rn-flexDirection-eqz5dr rn-height-7r4507 rn-marginRight-61z16t rn-marginBottom-p1pxzi rn-marginLeft-11wrixw rn-marginTop-1cvj4g8 rn-minHeight-ifefl9 rn-minWidth-bcqeeo rn-paddingTop-wk8lta rn-paddingRight-9aemit rn-paddingBottom-1mdbw0j rn-paddingLeft-gy4na3 rn-position-u8s1d rn-width-1iadsmv rn-zIndex-1lgpqti"
+                  />
+                </View>
+                <TouchableWithoutFeedback
+                  onPressIn={[Function]}
+                  onPressOut={[Function]}
+                >
+                  <View
+                    accessible={true}
+                    onKeyDown={[Function]}
+                    onKeyUp={[Function]}
+                    onResponderGrant={[Function]}
+                    onResponderMove={[Function]}
+                    onResponderRelease={[Function]}
+                    onResponderTerminate={[Function]}
+                    onResponderTerminationRequest={[Function]}
+                    onStartShouldSetResponder={[Function]}
+                    style={
+                      Array [
+                        39,
                         Array [
-                          81,
+                          83,
                           Object {
                             "backgroundColor": "hsla(120, 52%, 48%, 1)",
                             "borderColor": "hsla(120, 52%, 48%, 1)",
                           },
                           undefined,
-                        ]
-                      }
-                    />,
-                    "delayLongPress": 500,
-                    "delayPressIn": 0,
-                    "delayPressOut": 100,
-                    "onPressIn": [Function],
-                    "onPressOut": [Function],
-                    "press": 0,
-                    "pressDuration": 150,
-                    "pressRetentionOffset": Object {
-                      "bottom": 30,
-                      "left": 20,
-                      "right": 20,
-                      "top": 20,
-                    },
-                  },
-                  "ref": null,
-                  "rendered": Object {
-                    "instance": null,
-                    "key": undefined,
-                    "nodeType": "class",
-                    "props": Object {
-                      "children": undefined,
-                      "style": Array [
-                        81,
+                        ],
+                      ]
+                    }
+                  >
+                    <div
+                      className="rn-alignItems-1awozwy rn-borderTopLeftRadius-w87uvk rn-borderTopRightRadius-yunqu1 rn-borderBottomRightRadius-74vylg rn-borderBottomLeftRadius-1syq735 rn-borderTopStyle-1efd50x rn-borderRightStyle-14skgim rn-borderBottomStyle-rull8r rn-borderLeftStyle-mm0ijv rn-borderTopWidth-5kkj8d rn-borderRightWidth-13l2t4g rn-borderBottomWidth-qklmqi rn-borderLeftWidth-1ljd8xs rn-boxSizing-deolkf rn-cursor-1loqt21 rn-display-6koalj rn-flexShrink-1qe8dj5 rn-flexBasis-1mlwlqe rn-flexDirection-eqz5dr rn-height-7r4507 rn-justifyContent-1777fci rn-marginRight-61z16t rn-marginBottom-p1pxzi rn-marginLeft-11wrixw rn-marginTop-19qrga8 rn-minHeight-ifefl9 rn-minWidth-bcqeeo rn-paddingTop-wk8lta rn-paddingRight-9aemit rn-paddingBottom-1mdbw0j rn-paddingLeft-gy4na3 rn-position-bnwqim rn-touchAction-1otgn73 rn-width-1iadsmv rn-zIndex-1lgpqti"
+                      data-focusable={true}
+                      onKeyDown={[Function]}
+                      onKeyUp={[Function]}
+                      onResponderGrant={[Function]}
+                      onResponderMove={[Function]}
+                      onResponderRelease={[Function]}
+                      onResponderTerminate={[Function]}
+                      onResponderTerminationRequest={[Function]}
+                      onStartShouldSetResponder={[Function]}
+                      style={
                         Object {
                           "backgroundColor": "hsla(120, 52%, 48%, 1)",
-                          "borderColor": "hsla(120, 52%, 48%, 1)",
-                        },
-                        undefined,
-                      ],
-                    },
-                    "ref": null,
-                    "rendered": null,
-                    "type": [Function],
-                  },
-                  "type": [Function],
-                },
-              ],
-              "type": [Function],
-            },
-          ],
-          "type": [Function],
-        },
-      ],
-      "type": [Function],
-    },
-  ],
-  Symbol(enzyme.__options__): Object {
-    "adapter": ReactSixteenAdapter {
-      "options": Object {
-        "enableComponentDidUpdateOnSetState": true,
-      },
-    },
-  },
-}
+                          "borderBottomColor": "hsla(120, 52%, 48%, 1)",
+                          "borderLeftColor": "hsla(120, 52%, 48%, 1)",
+                          "borderRightColor": "hsla(120, 52%, 48%, 1)",
+                          "borderTopColor": "hsla(120, 52%, 48%, 1)",
+                        }
+                      }
+                      tabIndex="0"
+                    />
+                  </View>
+                </TouchableWithoutFeedback>
+              </div>
+            </View>
+          </AnimatedComponent>
+        </div>
+      </View>
+    </div>
+  </View>
+</ArcadeButton>
 `;
-
-exports[`ArcadeButton Snapshot 3 should match 1`] = `undefined`;

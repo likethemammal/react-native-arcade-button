@@ -6,7 +6,7 @@ import general_components from '@likethemammal/general-components'
 const shared = general_components.__tests__._shared.tests
 
 import ArcadeButton from '../../ArcadeButton'
-import { Touchable } from 'react-primitives'
+import { TouchableWithoutFeedback } from 'react-native-web'
 
 const mockOut_func = jest.fn()
 const mockIn_func = jest.fn()
@@ -47,14 +47,14 @@ describe('ArcadeButton', () => {
 
     shared.SNAPSHOTS_SHOULD_MATCH([
         component,
-        disabled_component,
         empty_component,
+        disabled_component,
         multiple_component,
     ])
 
     test(`if not disabled, mock funcs should  be called`, () => {
-        component.find(Touchable).props().onPressIn()
-        component.find(Touchable).props().onPressOut()
+        component.find(TouchableWithoutFeedback).props().onPressIn()
+        component.find(TouchableWithoutFeedback).props().onPressOut()
 
         expect(
             mockIn_func.mock.calls.length
@@ -67,9 +67,9 @@ describe('ArcadeButton', () => {
 
     test(`if not disabled, calling onPressIn multiple times should only call the mock once`, () => {
 
-        multiple_component.find(Touchable).props().onPressIn()
-        multiple_component.find(Touchable).props().onPressIn()
-        multiple_component.find(Touchable).props().onPressIn()
+        multiple_component.find(TouchableWithoutFeedback).props().onPressIn()
+        multiple_component.find(TouchableWithoutFeedback).props().onPressIn()
+        multiple_component.find(TouchableWithoutFeedback).props().onPressIn()
 
         expect(
             multiple_mockIn_func.mock.calls.length
@@ -77,7 +77,7 @@ describe('ArcadeButton', () => {
     })
 
     test(`if disabled, onPressIn should not be called`, () => {
-        disabled_component.find(Touchable).props().onPressIn()
+        disabled_component.find(TouchableWithoutFeedback).props().onPressIn()
 
         expect(
             disabled_mockIn_func.mock.calls.length
@@ -85,7 +85,7 @@ describe('ArcadeButton', () => {
     })
 
     test(`if disabled, onPressOut should not be called`, () => {
-        disabled_component.find(Touchable).props().onPressOut()
+        disabled_component.find(TouchableWithoutFeedback).props().onPressOut()
 
         expect(
             disabled_mockOut_func.mock.calls.length
@@ -93,7 +93,7 @@ describe('ArcadeButton', () => {
     })
 
     test(`if disabled, onPressOut should call onDisabledOut mock function`, () => {
-        disabled_component.find(Touchable).props().onPressOut()
+        disabled_component.find(TouchableWithoutFeedback).props().onPressOut()
 
         expect(
             disabled_mockDisabled_func.mock.calls.length

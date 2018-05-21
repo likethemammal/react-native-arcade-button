@@ -30,6 +30,8 @@
   ],
   "dependencies": {
     "lodash": "^4.17.4",
+    "react-native": "^0.55.4",
+    "react-native-web": "^0.7.2",
     "underscore": "^1.8.3"
   },
   "devDependencies": {
@@ -37,9 +39,7 @@
     "babel-core": "^6.24.1",
     "babel-jest": "^21.2.0",
     "babel-loader": "^7.0.0",
-    "babel-preset-env": "^1.7.0",
-    "babel-preset-react": "^6.24.1",
-    "babel-preset-stage-0": "^6.24.1",
+    "babel-preset-react-native": "^4.0.0",
     "coveralls": "^3.0.0",
     "enzyme": "^3.2.0",
     "enzyme-adapter-react-16": "^1.1.1",
@@ -47,8 +47,8 @@
     "jest": "^21.2.1",
     "raf": "^3.4.0",
     "react": "16.2.0",
+    "react-art": "^16.3.2",
     "react-dom": "16.2.0",
-    "react-primitives": "^0.5.0",
     "react-test-renderer": "16.2.0",
     "source-map-loader": "^0.2.3",
     "uglifyjs-webpack-plugin": "^1.2.5",
@@ -63,6 +63,9 @@
     "setupTestFrameworkScriptFile": "<rootDir>test.config.js",
     "testPathIgnorePatterns": [
       "/node_modules/"
+    ],
+    "snapshotSerializers": [
+      "enzyme-to-json/serializer"
     ]
   },
   "engines": {

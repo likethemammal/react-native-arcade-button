@@ -9,11 +9,10 @@
     "babel-loader": "^7.0.0",
     "react": "16.2.0",
     "react-dom": "16.2.0",
+    "react-native-web": "^0.3.4",
     "source-map-loader": "^0.2.3",
     "webpack": "3.9.1",
-    "webpack-dev-server": "^2.10.1",
-    "react-native": "^0.52.2",
-    "react-native-web": "^0.3.4"
+    "webpack-dev-server": "^2.10.1"
   },
   "peerDependencies": {
     "react": ">=16.2.x",
