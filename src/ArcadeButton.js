@@ -5,7 +5,7 @@ import {
     View,
     Animated,
     TouchableWithoutFeedback,
-} from 'react-native-web'
+} from 'react-native'
 
 const colors =  {
 
@@ -58,7 +58,8 @@ export default class ArcadeButton extends Component {
             {
                 toValue: 1,
                 delay: 0,
-                duration: 42
+                duration: 42,
+                useNativeDriver: true
             }
         );
 
